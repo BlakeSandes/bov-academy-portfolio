@@ -1,0 +1,181 @@
+// main {
+//   margin: 24px;
+// }
+
+[class^="btn"] {
+  @extend %buttonDefault;
+  cursor: pointer;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+// Default Hover State
+[class^="btn"]:hover {
+  background: $color-btnHover-background;
+}
+[class^="btn"]:focus {
+  background: $color-btnHover-background;
+}
+
+// Button states
+
+.btn-primary {
+  background: $color-primaryBtn-background;
+  color: $color-primaryBtn-color;
+}
+.btn-active {
+  background: $color-active-background;
+  color: $color-primaryBtn-color;
+}
+.btn-secondary {
+  background: $color-secondaryBtn-background;
+  color: $color-secondaryBtn-fontColor;
+}
+
+
+// Button sizes
+
+.btn-xs-w {
+  width: 48px;
+}
+.btn-sm-w {
+  width: 64px;
+}
+.btn-md-w {
+  width: 96px;
+}
+.btn-lg-w {
+  width: 144px;
+}
+
+.btn-full-w {
+  width: 100%;
+}
+.btn-xs-h {
+  height: 24px;
+}
+.btn-sm-h {
+  height: 36px;
+}
+.btn-lg-h {
+  height: 48px;
+}
+
+// Button weight
+// Rotated 45deg Square Buttons
+.rotate__container {
+  display: inline-flex;
+  [class*="-rotate45-"] {
+    border: none;
+    transform: rotate(45deg);
+    span,
+    input,
+    label {
+      transform: rotate(-45deg);
+      color: inherit;
+    }
+  }
+}
+.btn-rotate45-xs {
+  width: 32px;
+  height: 32px;
+  margin: 6px;
+}
+.btn-rotate45-sm {
+  width: 64px;
+  height: 64px;
+  margin: 12px;
+}
+.btn-rotate45-md {
+  width: 84px;
+  height: 84px;
+  margin: 16px;
+  font-size: 1.35rem;
+}
+.btn-rotate45-lg {
+  width: 144px;
+  height: 144px;
+  margin: 28px;
+}
+
+// Spiral Text in Button
+.spiral__addOn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:stretch;
+  text-align: center;
+  &:hover {
+    // background: #F4F9FB;
+    em:nth-of-type(5n+1) {
+      background: #529DFF;
+    }
+    em:nth-of-type(5n+2) {
+      background: #4AB8E8;
+    }
+    em:nth-of-type(5n+3) {
+      background: #5EF8FF;
+    }
+    em:nth-of-type(5n+4) {
+      background: #4AE8C2;
+    }
+    em:nth-of-type(5n+5) {
+      background: #52FFA5;
+    }
+
+    em:first-of-type,
+    em:nth-of-type(2),
+    em:nth-of-type(3),
+    em:nth-of-type(4),
+    em:nth-of-type(5),
+    em:nth-of-type(6),
+    em:nth-of-type(7),
+    em:nth-of-type(8),
+    em:nth-of-type(9),
+    em:nth-of-type(n+10),
+    em:last-of-type {
+      transform: rotateY(360deg);
+    }
+  }
+  em {
+    padding: .2rem .1rem 0 0;
+    transition: background .25s, transform .25s;
+    width: 1.1rem;
+    
+    &:nth-of-type(2) {
+      transition-delay: .04s;
+    }
+    &:nth-of-type(3) {
+      transition-delay: .08s;
+    }
+    &:nth-of-type(4) {
+      transition-delay: .12s;
+    }
+    &:nth-of-type(5) {
+      transition-delay: .16s;
+    }
+    &:nth-of-type(6) {
+      transition-delay: .20s;
+    }
+    &:nth-of-type(7) {
+      transition-delay: .24s;
+    }
+    &:nth-of-type(8) {
+      transition-delay: .28s;
+    }
+    &:nth-of-type(9) {
+      transition-delay: .32s;
+    }
+    &:nth-of-type(n+10) {
+      transition-delay: .36s;
+    }
+    &:last-of-type {
+      transition-delay: .4s;
+    }
+    
+  }
+  .space {
+    margin: 0 4px;
+  }
+}
+

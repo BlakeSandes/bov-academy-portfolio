@@ -1,0 +1,81 @@
+
+// Color palette for the site.
+// Typography 
+$color-heatherGrey: #c3ced9;
+
+// Header
+$color-vikingGreen: #51C1D9;
+$color-turquoiseBlue: #4EF0E1;
+$color-pictonBlue: #4EA9F0;
+$color-havelockBlue: #4595D4;
+$color-jungleMist: #B5D2D8;
+$color-kashmirBlue: #496F9A;
+$color-hummingBirdBlue: #C9EDF7;
+
+// Sidebar
+$color-charlotteBlue: #BBEEF9;
+$color-blizzardBlue: #A8E0EC;
+$color-lilyWhiteBlue: #E8F9FF;
+$color-twilightBlue: #ECFDFF;
+
+// Main
+$color-blackSqueezeWhite: #F4F9FB;
+$color-cornFlowerBlue: #9DCAED;
+$color-linkWaterBlue: #CEEDF3;
+$color-skyBlue: #6AC6EF;
+$color-hokiBlue: #6A839F;
+$color-hokiBlueLighter: #6983A0;
+
+// Buttons
+$color-twilightBlueLight: #F8FDFF;
+$color-baliHaiBlue: #7d95ab;
+$color-selagoBlue: #e4edfb;
+$color-shipCoveBlue: #7C99BA;
+$color-astralBlue: #368596;
+$color-aquamarine: #84FFF2;
+// Colors for Purpose
+
+
+/*************Purpose of Colors************/
+
+// Typography
+$color-placeholder-fontColor: $color-heatherGrey;
+
+
+// Navigation Colors
+$color-header-background: $color-vikingGreen;
+$color-headLink-background: $color-turquoiseBlue;
+$color-headLink-fontColor: $color-kashmirBlue;
+$color-active-background: $color-pictonBlue;
+$color-header-border: $color-havelockBlue;
+
+
+
+// Main Content Colors
+$color-main-background: $color-blackSqueezeWhite ;
+$color-section-background: $color-linkWaterBlue;
+$color-sectionHeading-border: $color-cornFlowerBlue;
+$color-mainHeading-background: $color-skyBlue;
+$color-mainHeading-fontColor: $color-hokiBlue;
+$color-mainText-fontColor: $color-hokiBlueLighter;
+$color-section-border: $color-blizzardBlue;
+
+// Colors for Side Bar Nav/Project Carousel
+$color-sidebar-background: $color-charlotteBlue;
+$color-listLight-background: $color-lilyWhiteBlue;
+$color-listDark-background: $color-twilightBlue;
+
+// Button State Colors
+$color-btnHover-background: $color-aquamarine;
+$color-defaultBtn-background: $color-twilightBlueLight;
+$color-defaultBtn-fontColor: $color-baliHaiBlue;
+$color-defaultBtn-border: $color-hokiBlue;
+$color-defaultBtn-shadow: $color-hokiBlueLighter;
+$color-primaryBtn-background: $color-turquoiseBlue;
+$color-primaryBtn-color: $color-kashmirBlue;
+$color-secondaryBtn-background: $color-hummingBirdBlue;
+$color-secondaryBtn-fontColor: $color-pictonBlue;
+
+// $color-primaryBtn-background: ;
+// $color-primaryBtn-fontColor: ;
+// $color-primaryBtn-border: ;

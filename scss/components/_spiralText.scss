@@ -1,0 +1,99 @@
+.spiral__control {
+  margin: 12px auto;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1rem;
+  background: #CEEDF3;
+  border: 1px solid #A8E0EC;
+  transition: background .75s;
+  input[type=button] {
+    display: none;
+  }
+  .spiral__addOn {
+    display: block;
+    width: 100%;
+    height: inherit;
+    padding: 13px 0;
+    &:hover {
+      cursor: pointer;
+      background: #F4F9FB;
+      em:nth-of-type(5n+1) {
+        background: #529DFF;
+      }
+      em:nth-of-type(5n+2) {
+        background: #4AB8E8;
+      }
+      em:nth-of-type(5n+3) {
+        background: #5EF8FF;
+      }
+      em:nth-of-type(5n+4) {
+        background: #4AE8C2;
+      }
+      em:nth-of-type(5n+5) {
+        background: #52FFA5;
+      }
+
+      em:first-of-type,
+      em:nth-of-type(2),
+      em:nth-of-type(3),
+      em:nth-of-type(4),
+      em:nth-of-type(5),
+      em:nth-of-type(6),
+      em:nth-of-type(8),
+      em:nth-of-type(9),
+      em:nth-of-type(n+10),
+      em:last-of-type {
+        transform: rotateX(360deg);
+      }
+    }
+    em {
+      padding: .1rem .1rem 0 0;
+      display: inline-block;
+      transition: background .25s, transform .25s;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 50%;
+      &:nth-of-type(2) {
+        transition-delay: .04s;
+      }
+      &:nth-of-type(3) {
+        transition-delay: .08s;
+      }
+      &:nth-of-type(4) {
+        transition-delay: .12s;
+      }
+      &:nth-of-type(5) {
+        transition-delay: .16s;
+      }
+      &:nth-of-type(6) {
+        transition-delay: .20s;
+      }
+      &:nth-of-type(7) {
+        transition-delay: .24s;
+      }
+      &:nth-of-type(8) {
+        transition-delay: .28s;
+      }
+      &:nth-of-type(9) {
+        transition-delay: .32s;
+      }
+      &:nth-of-type(n+10) {
+        transition-delay: .36s;
+      }
+      &:last-of-type {
+        transition-delay: .4s;
+      }
+    }
+    .space {
+      margin: 0 4px;
+    }
+  }
+  
+}
+
+
+/*Styling and transform of letters upon hover*/
+
+
+
+

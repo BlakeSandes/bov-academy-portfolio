@@ -2,10 +2,260 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>BlakeSandes Portfolio</title>
-  <link rel="stylesheet" href="scss/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- <script src="https://use.fontawesome.com/b5e330f3a1.js"></script> -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
+  <div id="main-container" class="main-container">
+    <header class="main__header">
+      <nav class="nav__container" role="navigation">
+
+        <div class="nav__logoContainer">
+          <div class="rotate__container nav__logo">
+            <div class="btn-rotate45-lg btn-primary tabindex="1"></div>
+            <div class="triangle__container">
+              <div class="topTriContainer">
+                <svg viewBox="0 0 190 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs></defs>
+                  <polygon id="Top-Search-Triangle" points="95 0 190 6 0 6"></polygon>
+                </svg>
+              </div>
+              <a href="#" class="btn-active spiral__addOn nav__logoName" role="button">
+                <em>B</em><em>L</em><em>A</em><em>K</em><em>E</em>
+                <span class="space"></span>
+                <em>W</em><em>I</em><em>L</em><em>S</em><em>O</em><em>N</em>
+              </a>
+              <div class="bottomTriContainer">
+                <svg viewBox="0 0 190 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs></defs>
+                  <polygon id="Triangle" transform="translate(95.000000, 4.000000) scale(1, -1) translate(-95.000000, -4.000000) " points="95 0 190 8 0 8"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav">
+          <li class="nav__item">
+            <div class="rotate__container">
+              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>About</span></a>
+            </div>
+          </li>
+          <li class="nav__item selected">
+            <div class="rotate__container">
+              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Projects</span></a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <div class="rotate__container">
+              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Skills</span></a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <div class="rotate__container">
+              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Articles</span></a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <div class="rotate__container">
+              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Contact</span></a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="pivotDropdown__container nav__mobile">
+
+          <input type="checkbox" id="pivotDown" name="pivot" class="pivotDown--radio">
+          
+          <div class="rotate__container pivot__controls  pivot--controlRtSide">
+            <button class="btn-primary btn-rotate45-sm">
+              <label for="pivotDown" class="pivotDown">⭅</label>
+              <span  class="pivotUp">⤧</span>
+            </button>
+          </div>
+
+          <ul class="groupList pivot__groupList pivot__rtAction">
+            <li class="selected"><a href="#!" class="groupList__link">About</a></li>
+            <li><a href="#!" class="groupList__link">Projects</a></li>
+            <li><a href="#!" class="groupList__link">Skills</a></li>
+            <li><a href="#!" class="groupList__link">Articles</a></li>
+            <li><a href="#!" class="groupList__link">Contact</a></li>
+            <li><div class="input__outerContainer nav__searchContainer">
+              <label for="search" class="input__label"></label>
+              <div class="input__container input--md">
+                <div class="topTriContainer">
+                  <svg viewBox="0 0 190 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <polygon id="Top-Search-Triangle" points="95 0 190 6 0 6"></polygon>
+                  </svg>
+                </div>
+                <input type="search" class="input__control nav__searchInput btn-primary" placeholder="Search" id="search">
+                <div class="bottomTriContainer">
+                  <svg viewBox="0 0 190 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <polygon id="Triangle" transform="translate(95.000000, 4.000000) scale(1, -1) translate(-95.000000, -4.000000) " points="95 0 190 8 0 8"></polygon>
+                  </svg>
+                </div>
+                <div class="rotate__container searchBtn__container">
+                  <button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button>
+                </div>
+              </div>
+            </div></li>
+          </ul>
+        </div>
+
+        <div class="input__outerContainer nav__searchContainer">
+          <label for="search" class="input__label"></label>
+          <div class="input__container input--md">
+            <div class="topTriContainer">
+              <svg viewBox="0 0 190 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs></defs>
+                <polygon id="Top-Search-Triangle" points="95 0 190 6 0 6"></polygon>
+              </svg>
+            </div>
+            <input type="search" class="input__control nav__searchInput btn-primary" placeholder="Search" id="search">
+            <div class="bottomTriContainer">
+              <svg viewBox="0 0 190 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs></defs>
+                <polygon id="Triangle" transform="translate(95.000000, 4.000000) scale(1, -1) translate(-95.000000, -4.000000) " points="95 0 190 8 0 8"></polygon>
+              </svg>
+            </div>
+            <div class="rotate__container searchBtn__container">
+              <button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main__container">
+      <section id="main-" class="main-about">
+          <article class="heading__container">
+            <h4>About</h4>
+            <svg class="polygon__container"  width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs></defs>
+              <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
+            </svg>
+          </article>
+          <div class="grid about__container">
+            <article class="pillar-sm-12 pillar-md-7 pillar-lg-8 about__description">
+              <p>
+                Here is my Site to display and promote all my web creations while studying at Bov Academy...or at least the current iteration of it. I hope I deliver in conveying my developing talents as an aspiring full stack developer. The site in its current state is leveraging my knowledge of predominantly HTML5 and CSS3, with a sprinkling of Javascript here and there.
+              </p>
+              <p>
+                Who am I? Well, I am a Creative type I suppose. I am a father, a married man, a woodworker, Canadian-American, Extroverted- Introvert. I love music and art, and Japanese animation. Hayao Miyazaki is my greatest inspiration. I have dabbled in the healing arts and different forms of spirituality for some time. Enough to fool people into thinking I may embody wisdom. I enjoy being out in nature very much and have worked outside most of my adult life.  I am slightly weird and have a penchant for fringe thinking. Got to keep things interesting you know! 
+              </p>
+              <p>After my studies with Bov Academy I have big plans! Well, ideally work for a company building things that are actually useful and contribute towards tangible positivity. I also would love to get paid well. It sucks being a carpenter that can't afford a house or have my girls play in a garden of our own. You know, basic necessities. Oh, and travel. This is a pretty fantastic planet and it needs to be seen! </p>
+            </article>
+            <figure class="pillar-md-5 pillar-lg-4 about__figure">
+              <img src="images/vicPic.jpg" alt="Photo of me and the gals.">
+            </figure>
+          </div>
+      </section>
+      <section id="main-projects" class="main-projects">
+        <article class="heading__container">
+          <h4>Projects</h4>
+          <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs></defs>
+            <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
+          </svg>
+        </article>
+        <section class="projects__container">
+          <aside class="projects__sidebar">
+            <ul class="projects-level1">
+              <li><input type="radio" id="project-1" name="project-sidebar" checked><label for="project-1">Sidebar</label></li>
+              <li><input type="radio" id="project-2" name="project-sidebar" class="projects-forms"><label for="project-2">Forms</label>
+                <!-- <ul class="projects-level2 dropdown">
+                  <li><input type="radio" id="project-2_1" name="project-sidebar"><label for="project-2_1">Signup</label></li>
+                  <li><input type="radio" id="project-2_2" name="project-sidebar"><label for="project-2_2">Search</label></li>
+                  <li><input type="radio" id="project-2_3" name="project-sidebar"><label for="project-2_3">Questionaire</label></li>
+                  <li><input type="radio" id="project-2_4" name="project-sidebar"><label for="project-2_4">Login</label></li>
+                  <li><input type="radio" id="project-2_5" name="project-sidebar"><label for="project-2_5">Color Builder</label></li>
+                  <li><input type="radio" id="project-2_6" name="project-sidebar"><label for="project-2_6">Shipping/Billing</label></li>
+                  <li><input type="radio" id="project-2_7" name="project-sidebar"><label for="project-2_7">Scheduling</label></li>
+                  <li><input type="radio" id="project-2_8" name="project-sidebar"><label for="project-2_8">Credit/Debit</label></li>
+                </ul> -->
+              </li>
+              <li><input type="radio" id="project-3" name="project-sidebar"><label for="project-3">Calculator</label></li>
+              <li><input type="radio" id="project-4" name="project-sidebar"><label for="project-4">Shopping Cart</label></li>
+              <li><input type="radio" id="project-5" name="project-sidebar"><label for="project-5">Image Gallery</label></li>
+              <li><input type="radio" id="project-6" name="project-sidebar"><label for="project-6">CSS Accordian</label></li>
+              <li><input type="radio" id="project-7" name="project-sidebar"><label for="project-7">CSS Tabs</label></li>
+              <li><input type="radio" id="project-8" name="project-sidebar" class="projects-components"><label for="project-8">CSS Components</label>
+                <!-- <ul class="projects-level2 dropdown">
+                  <label for="project-8" class="projects-components--close">❌</label>
+                  <li><input type="radio" id="project-8_1" name="project-sidebar"><label for="project-8_1">Grid</label></li>
+                  <li><input type="radio" id="project-8_2" name="project-sidebar"><label for="project-8_2">Buttons</label></li>
+                  <li><input type="radio" id="project-8_3" name="project-sidebar"><label for="project-8_3">Input Groups</label></li>
+                  <li><input type="radio" id="project-8_4" name="project-sidebar"><label for="project-8_4">List Groups</label></li>
+                  <li><input type="radio" id="project-8_5" name="project-sidebar"><label for="project-8_5">Pivot Dropdown</label></li>
+                  <li><input type="radio" id="project-8_6" name="project-sidebar"><label for="project-8_6">Spiral Text</label></li>
+                </ul> -->
+              </li>
+              <li><input type="radio" id="project-9" name="project-sidebar"><label for="project-9">Books Modern Developer</label></li>
+            </ul>
+          </aside>
+          <div class="portfolio-carousel__container">
+            <!-- Labels associated with next action -->
+            <!-- <div class="pivot__controls pivot--rtSide pivot--downBtn">
+              <label for="carousel__item1" class="carousel__item1">↶</label>
+              <label for="carousel__item2" class="carousel__item2">↶</label>
+              <label for="carousel__item3" class="carousel__item3">↶</label>
+            </div> -->
+            
+            <!-- labels associated with previous action -->
+            <!-- <div class="pivot__controls pivot--rtSide pivot--upBtn">
+              <label for="carousel__item1" class="carousel__item1">↷</label>
+              <label for="carousel__item2" class="carousel__item2">↷</label>
+              <label for="carousel__item3" class="carousel__item3">↷</label>
+            </div> -->
+            
+            <!-- Carousel Slides -->
+            <div class="carousel__slide1 pivot__rtAction">
+              <img sizes="75vw" src="" alt="">
+            </div>
+            <div class="carousel__slide2 pivot__rtAction">
+              <img sizes="75vw"  src="" alt="">
+            </div>
+            <div class="carousel__slide3 pivot__rtAction">
+              <img sizes="75vw"  src=""  alt="">
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="main-skills" class="main-skills">
+        <article class="heading__container">
+          <h4>Skills</h4>
+          <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs></defs>
+            <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
+          </svg>
+        </article>
+      </section>
+      <section id="main-" class="main-articles">
+        <article class="heading__container">
+          <h4>Articles</h4>
+          <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs></defs>
+            <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
+          </svg>
+        </article>
+      </section>
+      <section id="main-contact" class="main-contact">
+        <article class="heading__container">
+          <h4>Contact</h4>
+          <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs></defs>
+            <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
+          </svg>
+        </article>
+      </section>
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
 </body>
 </html>

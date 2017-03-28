@@ -1,0 +1,212 @@
+.pivotDropdown__container {
+  @extend %flexDefaultState;
+  position: relative;
+  width: 100%;
+  // overflow: hidden;
+  border-radius: 3px;
+  input[type=checkbox],
+  input[type=radio] {
+    display: none;
+  }
+  .pivot__controls {
+    display: flex;
+    // justify-content: stretch;
+    position: relative;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    transition: opacity .3s;
+    label,
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      font-weight: 900;
+      transition: opacity .4s ease-in;
+    }
+    &:hover {
+      cursor: pointer;
+      label,
+      span {
+        cursor: pointer;
+      }
+    }
+    .pivotDown {
+      pointer-events: visible;
+      opacity: .6;
+    }
+    .pivotUp {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+  
+  /*Placement of button on left or right depending how you want it to pivot.*/
+  .pivot--controlRtSide {
+    right: 0;
+    margin-right: 6px;
+  }
+  .pivot--controlLeftSide {
+    left: 0;
+    margin-left: 6px;
+  }
+  
+  .pivot__groupList {
+    // border: 1px solid black;
+    position: absolute; 
+    display: block;
+    width: 100%;
+    transition-timing-function: ease-in;
+    transition: opacity .75s, transform 1s;
+    background-color: linear-gradient(rgba(206,237,243, .5), rgba(206,237,243,.85) );
+    margin-bottom: 0;
+    opacity: 0;
+    li {
+      margin: 4px 0;
+      opacity: 0;
+      transition-timing-function: ease-in;
+      transition: opacity .75s;
+      &:first-of-type {
+        transition-delay: .25s;
+      }
+      &:nth-of-type(2) {
+        transition-delay: .6s;
+      }
+      &:nth-of-type(3) {
+        transition-delay: .9s;
+      }
+      &:nth-of-type(4) {
+        transition-delay: 1.2s;
+      }
+      &:nth-of-type(5) {
+        transition-delay: 1.5s;
+      }
+      &:last-of-type {
+        transition-delay: 1.8s;
+      }
+    }
+  }
+  .pivot__rtAction {
+    transform-origin: top right;
+    transform: rotate(180deg);        
+  }
+  .pivot__leftAction {
+    transform-origin: top left;
+    transform: rotate(-180deg);        
+  }
+}
+
+  /********Pivot List Items in to view********/
+  .pivotDown--radio:checked {
+    ~ .pivot__groupList {
+      opacity: 1;
+      transform: rotate(0deg);
+      li {
+        opacity: 1;
+      }
+      // height: 100%;
+    }
+    ~ .pivot__controls .pivotDown {
+      opacity: 0;
+    }
+    ~ .pivot__controls .pivotUp {
+      opacity: .6;
+    }
+  }
+  .pivotDown--radion:not(:checked) {
+    ~ .pivot___groupList {
+      opacity: 0;
+      li {
+        opacity: 0;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+/*******Carousel********/
+
+.carousel__container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e4edfb;
+  margin: 0 auto 24px;
+  overflow: hidden;
+}
+
+.carousel__container .pivot--upBtn {
+  bottom: 4px;
+}
+
+.carousel__container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/*Initial hidden controls*/
+.pivot--downBtn .carousel__item1,
+.pivot--downBtn .carousel__item3,
+.carousel__container .pivot--upBtn {
+  display: none;
+}
+
+/********Changing  states when checked********/ 
+
+/*Slide 2 state*/
+.slide2--radio:checked ~ .pivot--downBtn .carousel__item3,
+.slide2--radio:checked ~ .pivot--upBtn,
+.slide2--radio:checked ~ .pivot--upBtn .carousel__item1 {
+  display: block;
+}
+.slide2--radio:checked ~ .pivot--downBtn .carousel__item2,
+.slide2--radio:checked ~ .pivot--upBtn .carousel__item2,
+.slide2--radio:checked ~ .pivot--upBtn .carousel__item3 {
+  display: none;
+}
+
+/*Slide --radio3 state*/
+.slide3--radio:checked ~ .pivot--downBtn,
+.slide3--radio:checked ~ .pivot--upBtn .carousel__item1,
+.slide3--radio:checked ~ .pivot--upBtn .carousel__item3  {
+  display: none;
+}
+.slide3--radio:checked ~ .pivot--upBtn,
+.slide3--radio:checked ~ .pivot--upBtn .carousel__item2 {
+  display: block;
+} 
+
+/*Carousel items state*/
+.slide1--radio:checked ~ .carousel__slide1,
+.slide2--radio:checked ~ .carousel__slide2,
+.slide3--radio:checked ~ .carousel__slide3 {
+  transform: rotate(0deg);
+  opacity: 1;
+  z-index: 1;
+  height: 100%;
+}
+
+.slide1--radio:checked ~ .carousel__slide2,
+.slide1--radio:checked ~ .carousel__slide3,
+.slide2--radio:checked ~ .carousel__slide1,
+.slide2--radio:checked ~ .carousel__slide3,
+.slide3--radio:checked ~ .carousel__slide1,
+.slide3--radio:checked ~ .carousel__slide2 {
+  opacity: .1;
+  transform: rotate(360deg);
+}
+
+

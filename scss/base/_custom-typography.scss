@@ -1,0 +1,8 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Overwrite of default typeplate typography rules.
+$typl8-heading-color: $color-hokiBlue;
+$typl8-copy-color: darken($color-hokiBlue, 1%);
+// $typl8-line-height: 1.3;

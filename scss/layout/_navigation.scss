@@ -1,0 +1,196 @@
+.main__header {
+  background: $color-header-background;
+  border-bottom: 4px solid $color-header-border;
+  height: 172px;
+  width: 100%;
+  .nav__container {
+    -webkit-flex-direction: row;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    .nav__logoContainer {
+      position: relative;
+      display: block;
+      width: 15%;
+      min-width: 265px;
+      height: 100%;
+      .nav__logo {
+        margin: 12px 0 0 12px;
+        position: relative;
+        .triangle__container {
+          position: relative;
+          position: absolute;
+          top: 40%;
+          left: 24px;
+          .topTriContainer {
+            @extend %topTriContainer;
+            svg {
+              fill: $color-active-background;
+            }
+          }
+          .bottomTriContainer {
+            @extend %bottomTriContainer;
+            svg {
+              fill: $color-active-background;
+            }
+          }
+          .nav__loboName {
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    .nav {
+      @extend %flexDefaultState;
+      justify-content: center;
+      margin: 0 12px;
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+      .nav__item {
+        @media  screen and (max-width: 1200px) {
+          a {
+            width: 64px;
+            height: 64px;
+            margin: 12px 4px;
+            font-size: 1.2rem;
+            &:hover {
+              background: $color-btnHover-background;
+            }
+          }
+        }  
+        &.selected {
+          align-self: flex-start;
+          margin-top: 84px;
+          @media  screen and (max-width: 1200px) {
+            margin-top: 108px;
+          }
+          a {
+            margin-left: 0;
+            margin-right: 0;
+            background: $color-active-background;
+            @media  screen and (max-width: 1200px) {
+              margin-left: 0;
+              margin-right: 0;
+              background: $color-active-background; 
+            }
+          }
+        }
+        &:nth-child(odd):not(.selected) {
+          align-self: flex-end;
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    .nav__mobile {
+      position: relative;
+      order: 2;
+      margin-right: 6px;
+      .pivot__controls {
+        span,
+        label {
+          height: 100%;
+          font-size: 2rem;
+          padding: 4px 4px 0 0;
+        }
+      }
+      .pivot__groupList {
+        top: 72%;
+        right: 50px;
+        width: 220px;
+        font-size: 1.4rem;
+        z-index: 3;
+        .groupList__link {
+          background: $color-mainHeading-background;
+          color: $color-primaryBtn-color;
+          &:hover {
+            background: $color-btnHover-background;
+          }
+        }
+        .nav__searchContainer {
+          display: none;
+          @media screen and (max-width: 600px) {
+            display: flex;
+            width: 100%;
+            padding: 0;
+            border-radius: 3px;
+            .input__container {
+              margin-top: 6px;
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 900px) {
+        display: none;
+        .pivot__groupList {
+          display: none;
+        }
+      }
+    }
+    
+    .nav__searchContainer {
+      @extend %flexDefaultState;
+      position: relative;
+      justify-content: center;
+      width: 10%;
+      max-width: 320px;
+      min-width: 240px;
+      padding-right: 24px;
+      @media screen and (max-width: 900px) {
+        justify-content: center;
+        padding: 0 20px;
+        min-width: 40%;
+        .input__container {
+          align-self: flex-start;
+          margin-top: 36px;
+        }
+      }
+      @media  screen and (max-width: 600px) {
+        display: none;
+      }
+      .input__container {
+        align-items: flex-start;
+        max-width: 290px;
+        position: relative;
+        box-shadow: 0 0 1px $color-defaultBtn-shadow;
+        .nav__searchInput {
+          -webkit-transition: .5s background;
+          transition: .5s background;
+          border-radius: 3px;
+          &:focus {
+            background: $color-btnHover-background;
+          }
+        }
+        .topTriContainer {
+          @extend %topTriContainer;
+          svg {
+            fill: $color-primaryBtn-background;
+          }
+        }
+        .bottomTriContainer {
+          @extend %bottomTriContainer;
+          svg {
+            fill: $color-primaryBtn-background;
+          }
+        }
+        .searchBtn__container {
+          position: absolute;
+          top: -4px;
+          right: -23px;
+          .searchBtn {
+            border: 1px solid $color-header-border;
+            .fa-search {
+              color: $color-secondaryBtn-fontColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

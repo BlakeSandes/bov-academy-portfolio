@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buttons</title>
+  <script src="https://use.fontawesome.com/b5e330f3a1.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main>
+    <h1>Buttons</h1>
+
+    <h2>Button Types</h2>
+    <p>The Button tags can be a <code class="emphasis">&lt;a></code>, <code class="emphasis">&lt;button></code>, or an <code class="emphasis">&lt;input></code> tag.</p>
+
+    <a href="#!" class="btn-lg-w" role="button">Link</a>
+    <button class="btn-primary">Button</button>
+    <input type="button" class="btn" value="Input Button">
+    <input type="submit" class="btn" value="Submit">
+    
+
+
+
+    <h2>Button Sizes</h2>
+    <p>Buttons come in four height sizes as well as four width sizes. Extra small, small, medium, and large. Medium is the default size if no other is specified. Add any combination of the width and height classes for the desired size.</p>
+    <p>For extra small they are <em class="emphasis">.btn-xs-w</em> and <em class="emphasis">.btn-xs-h</em>. For small they are <em class="emphasis">.btn-sm-w</em> and <em class="emphasis">.btn-sm-h</em>. For large they are <em class="emphasis">.btn-lg-w</em> and <em class="emphasis">.btn-lg-h</em>.</p>
+    <p>The button width can also be dictated by the text with appropriate padding. In this case only a <em class="emphasis">.btn-*-h</em> needs to be specified.</p>
+    <p>Buttons can also be the entire width of their parent container by adding the <em class="emphasis">.btn-full-w</em>. If desired, the button width could also be determined by the parent container having the appropriate <em class="emphasis">grid</em> classes for positioning and dimensioning.</p>
+    
+    <h3>Extra Small</h3>
+    <a href="#!" class="btn-xs-w btn-xs-h" role="button">Link</a>
+    <h3>Small</h3>
+    <button class="btn-primary btn-sm-w btn-sm-h">Button</button>
+    <h3>Medium(default)</h3>
+    <input type="button" class="btn" value="Input Button">
+    <h3>Large</h3>
+    <input type="submit" class="btn-lg-h btn-lg-w" value="Submit">
+
+    <h2>Button Weght</h2>
+    <p>Buttons can have a weight, or "presence", of either raised, flat, or sunken. The <em class="emphasis">-raised</em> button is the default style with a slight box-shadow. The <em class="emphasis">raised with border</em> button is a raised button with a border and has the class <em class="emphasis">btn-raisedBorder</em>. A <em class="emphasis">-flat</em> button has no border or box-shadow and takes the class <em class="emphasis">btn-flat</em>. The <em class="emphasis">sunken</em> button has a border with a inset box shadow and takes the class <em class="emphasis">btn-sunken</em>.</p>
+    
+    <h2>Rotate 45 button</h2>
+    <p>All button types need to be wrapped in a <em class="emphasis">.rotate__container</em> div and each button type except the actual button tag, will get the <em class="emphasis">btn-rotate45</em> class in a span surrounding the button.</p>
+    <p>The clases are <em class="emphasis">.btn-rotate45-xs</em>, <em class="emphasis">.btn-rotate45-sm</em>, <em class="emphasis">.btn-rotate45-md</em>, and .btn-rotate45-lg.</p>
+    <p>The <em class="emphasis">.btn-rotate45-xs</em> can also be used as a link, for example in site navigation. Simply embed the <em class="emphasis">.rotate__container</em> in the navigation <code class="emphasis">&lt;li></code>.</p>
+
+    <!-- Can be used in navigation. -->
+    <div class="rotate__container">
+      <a href="#!" class="btn-rotate45-xs" role="button"><span>Link</span></a>
+    </div>
+
+    <div class="rotate__container">
+      <button class="btn-prime btn-rotate45-sm"><span>Button</span></button>
+    </div>
+
+    <div class="rotate__container">
+      <span class="btn-rotate45-md"><input type="button"  value="Input Button"></span>
+    </div>
+
+    <div class="rotate__container">
+      <span class="btn-rotate45-lg"><input type="submit" value="Submit"></span>
+    </div>
+
+
+    <!-- Spiral text as button -->
+    <h2>Spiral Text</h2>
+    <p>A spiraled animation effect can wow the viewer upon hover!</p>
+    <p>Spiraled text is only compatible with <code class="emphasis">&lt;a></code> and <code class="emphasis">&lt;button></code> tags.</p>
+    
+    <span>
+      <a href="#" class="btn spiral__addOn" role="button">
+        <em>B</em><em>L</em><em>A</em><em>K</em><em>E</em><span class="space"></span><em>W</em><em>I</em><em>L</em><em>S</em><em>O</em><em>N</em>
+      </a>
+    </span>
+    
+    <button class="btn-prime spiral__addOn">
+      <em>B</em><em>L</em><em>A</em><em>K</em><em>E</em><span class="space"></span><em>W</em><em>I</em><em>L</em><em>S</em><em>O</em><em>N</em>
+    </button>
+    
+  </main>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
