@@ -18,12 +18,14 @@
       text-align: center;
       margin-bottom: 64px;
       border-bottom: 4px solid $color-sectionHeading-border;
-      h4 {
+      .section-heading {
         position: absolute;
         width: 180px;
-        bottom: -42px;
+        bottom: -20px;
         left: 10%;
         z-index: 2;
+        font-size: 2em;
+        line-height: 1.25;
       }
       .polygon__container {
         z-index: 1;

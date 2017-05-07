@@ -5,7 +5,6 @@
  
 @import 'base/foundation';
 @import 'base/custom-typography';
-@import 'base/typeplate-index';
  
 @import 'layout/grid';
 @import 'layout/navigation';
@@ -18,9 +17,12 @@
 @import 'components/inputGroups';
 @import 'components/groupLists';
 @import 'components/pivotDropdown';
+@import 'components/graphs';
+@import 'components/modal';
 
  
 @import 'pages/main-page';
 @import 'pages/about';
 @import 'pages/projects';
+@import 'pages/skills-page';
  

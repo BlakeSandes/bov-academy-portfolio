@@ -4,23 +4,42 @@
       background-color: $color-main-background;
       border: 3px solid $color-section-border;
       border-radius: 3px;
-      @media screen and (max-width: 900px) {
-        background-image: url("images/vicPic.jpg");
+      @media screen and (max-width: 600px) {
+        // background-image: url("images/vicPic.jpg");
         // background-color: ;
       }
-      .about__description,
-      .about__figure {
-        padding: 12px;
+      @media screen and (min-width: 900px) {
+        width: 90%;
       }
       .about__description {
+        padding: 12px;
         @media screen and (min-width: 600px) {
           padding: 24px;
         }
+        @media screen and (min-width: 900px) {
+          padding: 48px;
+        }
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+          // display: inline-block;
+        }
       }
       .about__figure {
+        border-radius: 8px;
         opacity: .7;
-        @media screen and (max-width: 900px) {
-          display: none;
+        padding-left: 24px;
+        padding-right: 0;
+        float: right;
+        display: inline-block;
+        @media screen and (max-width: 600px) {
+          width: 57.5%;
+          padding: 24px;
+        }
+        @media screen and (min-width: 600px) {
+          width: 40.5%;
+        }
+        @media screen and  (min-width: 900px) {
+          width: 32%;
+          padding-bottom: 48px;
         }
       }
     }

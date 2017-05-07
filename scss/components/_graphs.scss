@@ -1,0 +1,257 @@
+// Component variables
+$color-graph-background: #4f5d7d;
+$color-graph-border: #1fd8ff;
+$color-graph-heading: #2f4b6a;
+
+.c-graph {
+  background: $color-graph-background;
+  border-radius: 3px;
+  border: 1px solid $color-graph-border;
+  margin-top: 64px;
+  padding: 2em 5% 6.5em;
+  position: relative;
+  &:before {
+    color: $color-graph-heading;
+    content: attr(data-graphName);
+    display: block;
+    font-family: 'fira_sans_condensedthin', sans-serif;
+    font-size: 1.5em;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: -2em;
+    width: 100%;
+  }
+  .c-graph__skills {
+    height: 12em;
+    margin: 0 auto;
+    position: absolute;
+    width: 90%;
+    .c-graph__skillsItem {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      height: 3em;
+      justify-content: flex-start;
+      position: relative;
+      span {
+        display: block;
+        height: 100%;
+        &:first-of-type {
+          color: #fff;
+          margin-top: -8px;
+          text-align: center;
+          text-shadow: 1px 1px 2px darken($color-graph-background, 10%);
+          width: 30%;
+        }
+        &:last-of-type {
+          border-top: 2px ridge rgba(255,255,255,.05);
+          margin-left: 5%;
+          margin-right: 5%;
+          width: 60%;
+        }
+      }
+    }
+  }
+  .c-graph__barContainer {
+    ul {
+      align-items: flex-end;
+      border-bottom: 2px solid $color-graph-border;
+      box-shadow: 0 8px 6px -6px darken($color-graph-background,8%);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 0 auto;
+      width: 100%;
+      .c-graph__barItem {
+        background: linear-gradient(to right, darken($color-graph-background,3%) 8%, darken($color-graph-background,2%) 8%, darken($color-graph-background,2%) 92%, darken($color-graph-background,3%) 95%); 
+        border-radius: 3px 3px 0 0;
+        height: 12em;
+        margin-right: 5%;
+        position: relative;
+        width: 8%;
+        &:nth-of-type(4) {
+          .c-graph__bar {
+            .caption {
+              left: -525%;
+              &:after {
+                left: 61%;
+              }
+            }
+          }
+        }
+        &:nth-of-type(5) {
+          .c-graph__bar {
+            .caption {
+              left: -670%;
+              &:after {
+                left: 78%;
+              }
+            }
+          }
+        }
+        &:after {
+          color: #fff;
+          content: attr(data-title);
+          font-size: .75em;
+          bottom: 0;
+          left: -10px;
+          margin-bottom: -68px;  
+          position: absolute;
+          text-align: left;
+          transform: rotate(45deg);
+          width: 130px;
+        }
+        // Skill Type
+        .c-graph__bar {
+          background: darken($color-graph-background,3%);
+          border-left: 1px solid $color-graph-border;
+          border-radius: 3px 3px 0 0; 
+          border-right: 1px solid $color-graph-border;
+          border-top: 1px solid $color-graph-border;
+          box-shadow: 0 0 2px darken($color-graph-background,45%);
+          position: relative;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          .caption {
+            position: relative;
+            position: absolute;
+            top: -5em;
+            left: -400%;
+            height: 5em;
+            z-index: 12;
+            width: 900%;
+            margin: 0 auto;
+            padding: 8px;
+            background: darken($color-graph-background,8%);
+            border-radius: 3px;
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility .3s, opacity .6s, top .5s;
+            transition-delay: 0 .2s 0;
+            &:after {
+              content: '';
+              position: absolute;
+              top: 100%;
+              left: 48%;
+              border: 16px solid transparent;
+              border-top-color: darken($color-graph-background,8%);
+              border-width: 16px 6px;
+              width: 0;
+              height: 0;
+            }
+            p {
+            color: #fff;
+            font-size: .9em;
+            }
+          }
+          &:hover {
+            cursor: help;
+            .caption {
+              visibility: visible;
+              opacity: 1;
+              top: -6.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Bar Heights for each set of skills.
+
+// Frontend Skills Graph Bars
+[data-graphName^="Frontend"] {
+  .c-graph__barItem {
+    &:first-of-type {
+      .c-graph__bar {
+        height: 6em;
+      }
+    }
+    &:nth-of-type(2) {
+      .c-graph__bar {
+        height: 9em;
+      }
+    }
+    &:nth-of-type(3) {
+      .c-graph__bar {
+        height: 3em;
+
+      }
+    }
+    &:nth-of-type(4) {
+      .c-graph__bar {
+        height: 6em;
+      }
+    }
+    &:nth-of-type(5) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+  }
+}
+
+// Backend Skills Graph Bars
+[data-graphName^="Backend"] {
+  .c-graph__barItem {
+    &:first-of-type {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+    &:nth-of-type(2) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+    &:nth-of-type(3) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+    &:nth-of-type(4) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+    &:nth-of-type(5) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+  }
+}
+
+// Other Skills Graph Bars
+[data-graphName^="Other"] {
+  .c-graph__barItem {
+    &:first-of-type {
+      .c-graph__bar {
+        height: 9em;
+      }
+    }
+    &:nth-of-type(2) {
+      .c-graph__bar {
+        height: 6em;
+      }
+    }
+    &:nth-of-type(3) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+    &:nth-of-type(4) {
+      .c-graph__bar {
+        height: 6em;
+      }
+    }
+    &:nth-of-type(5) {
+      .c-graph__bar {
+        height: 3em;
+      }
+    }
+  }
+}
