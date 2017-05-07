@@ -1,0 +1,54 @@
+.c-modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba($color-active-background, .8);
+  z-index: 100;
+  opacity: 0.5;
+  .c-modal {
+    width: 80%;
+    max-width: 600px;
+    height: 500px;
+    text-align: center;
+    background: #C9EDF7;
+    box-shadow: 0 0 2px darken($color-active-background, 15%);
+    padding: 15% 24px 24px;
+    border-radius: 3px;
+    position: relative;
+    font-size: 2em;
+    color: $color-mainText-fontColor;
+    &--close::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    &--close::after {
+      content: '✖';
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.3em;
+      margin-right: 12px;
+      color: #6a839f;
+      text-shadow: 0 0 1px #d9f7fc;
+    }
+  }
+  &:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+  }
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s, visibility 1s;
+  }
+}

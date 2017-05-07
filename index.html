@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>BlakeSandes Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <!-- <script src="https://use.fontawesome.com/b5e330f3a1.js"></script> -->
+  <script src="https://use.fontawesome.com/b5e330f3a1.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -41,27 +40,27 @@
         <ul class="nav">
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>About</span></a>
+              <a href="#main-about" class="btn-rotate45-md btn-primary" role="button"><span>About</span></a>
             </div>
           </li>
           <li class="nav__item selected">
             <div class="rotate__container">
-              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Projects</span></a>
+              <a href="#main-projects" class="btn-rotate45-md btn-primary" role="button"><span>Projects</span></a>
             </div>
           </li>
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Skills</span></a>
+              <a href="#main-skills" class="btn-rotate45-md btn-primary" role="button"><span>Skills</span></a>
             </div>
           </li>
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Articles</span></a>
+              <a href="#main-articles" class="btn-rotate45-md btn-primary" role="button"><span>Articles</span></a>
             </div>
           </li>
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#!" class="btn-rotate45-md btn-primary" role="button"><span>Contact</span></a>
+              <a href="#main-contact" class="btn-rotate45-md btn-primary" role="button"><span>Contact</span></a>
             </div>
           </li>
         </ul>
@@ -100,7 +99,7 @@
                   </svg>
                 </div>
                 <div class="rotate__container searchBtn__container">
-                  <button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button>
+                  <a href="#showModal"><button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button></a>
                 </div>
               </div>
             </div></li>
@@ -124,39 +123,43 @@
               </svg>
             </div>
             <div class="rotate__container searchBtn__container">
-              <button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button>
+              <a href="#showModal"><button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button></a>
+            </div>
+            <div class="c-modal__container" id="showModal">
+              <div class="c-modal">
+                <a href="#" class="c-modal--close"></a>
+                <p>Nothing to see here. Move along.</p>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
     <main class="main__container">
-      <section id="main-" class="main-about">
-          <article class="heading__container">
-            <h4>About</h4>
-            <svg class="polygon__container"  width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <defs></defs>
-              <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
-            </svg>
+      <section id="main-about" class="main-about">
+        <article class="heading__container">
+          <h1 class="section-heading">About</h1>
+          <svg class="polygon__container"  width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs></defs>
+            <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
+          </svg>
+        </article>
+        <div class="grid about__container">
+          <article class=" about__description">
+            <p>
+              <img src="images/vicPic.jpg" class="about__figure" alt="Photo of me and the gals.">
+              Here is my Site to display and promote all my web creations while studying at Bov Academy...or at least the current iteration of it. I hope I deliver in conveying my developing talents as an aspiring full stack developer. The site in its current state is leveraging my knowledge of predominantly HTML5 and CSS3, with a sprinkling of Javascript here and there.
+            </p>
+            <p>
+              Who am I? Well, I am a Creative type I suppose. I am a father, a married man, a woodworker, Canadian-American, Extroverted- Introvert. I love music and art, and Japanese animation. Hayao Miyazaki is my greatest inspiration. I have dabbled in the healing arts and different forms of spirituality for some time. Enough to fool people into thinking I may embody wisdom. I enjoy being out in nature very much and have worked outside most of my adult life.  I am slightly weird and have a penchant for fringe thinking. Got to keep things interesting you know! 
+            </p>
+            <p>After my studies with Bov Academy I have big plans! Well, ideally work for a company building things that are actually useful and contribute towards tangible positivity, and of course have as much fun as possible in the process. I also would love to get paid well. I would love to be able to afford a house to so my girls can play in a garden of our own. You know, basic necessities. Oh, and travel. This is a pretty fantastic planet and I would love to see more of it! </p>
           </article>
-          <div class="grid about__container">
-            <article class="pillar-sm-12 pillar-md-7 pillar-lg-8 about__description">
-              <p>
-                Here is my Site to display and promote all my web creations while studying at Bov Academy...or at least the current iteration of it. I hope I deliver in conveying my developing talents as an aspiring full stack developer. The site in its current state is leveraging my knowledge of predominantly HTML5 and CSS3, with a sprinkling of Javascript here and there.
-              </p>
-              <p>
-                Who am I? Well, I am a Creative type I suppose. I am a father, a married man, a woodworker, Canadian-American, Extroverted- Introvert. I love music and art, and Japanese animation. Hayao Miyazaki is my greatest inspiration. I have dabbled in the healing arts and different forms of spirituality for some time. Enough to fool people into thinking I may embody wisdom. I enjoy being out in nature very much and have worked outside most of my adult life.  I am slightly weird and have a penchant for fringe thinking. Got to keep things interesting you know! 
-              </p>
-              <p>After my studies with Bov Academy I have big plans! Well, ideally work for a company building things that are actually useful and contribute towards tangible positivity. I also would love to get paid well. It sucks being a carpenter that can't afford a house or have my girls play in a garden of our own. You know, basic necessities. Oh, and travel. This is a pretty fantastic planet and it needs to be seen! </p>
-            </article>
-            <figure class="pillar-md-5 pillar-lg-4 about__figure">
-              <img src="images/vicPic.jpg" alt="Photo of me and the gals.">
-            </figure>
-          </div>
+        </div>
       </section>
       <section id="main-projects" class="main-projects">
         <article class="heading__container">
-          <h4>Projects</h4>
+          <h1 class="section-heading">Projects</h1>
           <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs></defs>
             <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
@@ -183,7 +186,7 @@
               <li><input type="radio" id="project-5" name="project-sidebar"><label for="project-5">Image Gallery</label></li>
               <li><input type="radio" id="project-6" name="project-sidebar"><label for="project-6">CSS Accordian</label></li>
               <li><input type="radio" id="project-7" name="project-sidebar"><label for="project-7">CSS Tabs</label></li>
-              <li><input type="radio" id="project-8" name="project-sidebar" class="projects-components"><label for="project-8">CSS Components</label>
+              <li><input type="radio" id="project-8" name="project-sidebar" class="projects-components"><label for="project-8">CSS Components</label></li>
                 <!-- <ul class="projects-level2 dropdown">
                   <label for="project-8" class="projects-components--close">❌</label>
                   <li><input type="radio" id="project-8_1" name="project-sidebar"><label for="project-8_1">Grid</label></li>
@@ -193,7 +196,7 @@
                   <li><input type="radio" id="project-8_5" name="project-sidebar"><label for="project-8_5">Pivot Dropdown</label></li>
                   <li><input type="radio" id="project-8_6" name="project-sidebar"><label for="project-8_6">Spiral Text</label></li>
                 </ul> -->
-              </li>
+              
               <li><input type="radio" id="project-9" name="project-sidebar"><label for="project-9">Books Modern Developer</label></li>
             </ul>
           </aside>
@@ -227,16 +230,215 @@
       </section>
       <section id="main-skills" class="main-skills">
         <article class="heading__container">
-          <h4>Skills</h4>
+          <h1 class="section-heading">Skills</h1>
           <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs></defs>
             <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
           </svg>
         </article>
+        <div class="skills">
+          <div class="grid">
+            <div class="pillar-sm-6 pillar-lg-4">
+              <div class="c-graph" data-graphName="Frontend Development">
+                <ul>
+                  <li class="c-graph__skills">
+                    <ul>
+                      <li class="c-graph__skillsItem">
+                        <span>Expert</span>
+                        <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                          <span>Proficient</span>
+                          <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                        <span>Competent</span>
+                        <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                        <span>Learning</span>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-graph__barContainer">
+                    <ul>
+                      <li class="c-graph__barItem" data-title="Javascript">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Compentent: Still working on my Javascript Chops!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="HTML/CSS">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Proficient: I think I am getting pretty good at this stuff!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="ReactJS">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: I am new to the game, but Bov Academy will help me be exceptional!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="JQuery">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Compentent: Still working on my JQuery Chops!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="GreenSock">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: I haven't a clue, but I really want to get good at this!</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pillar-sm-6 pillar-lg-4">
+              <div class="c-graph" data-graphName="Backend Development">
+                <ul>
+                  <li class="c-graph__skills">
+                    <ul>
+                      <li class="c-graph__skillsItem">
+                        <span>Expert</span>
+                        <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                          <span>Proficient</span>
+                          <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                        <span>Competent</span>
+                        <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                        <span>Learning</span>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-graph__barContainer">
+                    <ul>
+                      <li class="c-graph__barItem" data-title="NodeJS">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: New territory, but I know I will rock at this eventually!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="ExpressJS">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: New territory, but I know I will rock at this eventually!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="MongoDB">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: New territory, but I know I will rock at this eventually!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="Ampersand">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: New territory, but I know I will rock at this eventually!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="Webpack">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: New territory, but I know I will rock at this eventually!</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="space-sm-3 pillar-sm-6 pillar-lg-4 space-lg-none">
+              <div class="c-graph" data-graphName="Other Skills">
+                <ul>
+                  <li class="c-graph__skills">
+                    <ul>
+                      <li class="c-graph__skillsItem">
+                        <span>Expert</span>
+                        <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                          <span>Proficient</span>
+                          <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                        <span>Competent</span>
+                        <span></span>
+                      </li>
+                      <li class="c-graph__skillsItem">
+                        <span>Learning</span>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-graph__barContainer">
+                    <ul>
+                      <li class="c-graph__barItem" data-title="Written Communication">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Proficient: I think I can write pretty well when I put my mind to it!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="Problem-solving">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Compentent: My studies at Bov Academy has shown me I can solve problems. I just need more practice!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="Project Management">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: This is new territory for me but I am a great team player and work well under pressure!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="Public Speaking">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Learning: I won't lie, I am scared shitless about this!</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="c-graph__barItem" data-title="Research">
+                        <div class="c-graph__bar">
+                          <div class="caption">
+                            <p>Compentent: I can do research, but plenty of room for improvement!</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="main-" class="main-articles">
+      <section id="main-articles" class="main-articles">
         <article class="heading__container">
-          <h4>Articles</h4>
+          <h1 class="section-heading">Articles</h1>
           <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs></defs>
             <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
@@ -245,7 +447,7 @@
       </section>
       <section id="main-contact" class="main-contact">
         <article class="heading__container">
-          <h4>Contact</h4>
+          <h1 class="section-heading">Contact</h1>
           <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs></defs>
             <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>

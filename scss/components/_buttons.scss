@@ -133,12 +133,12 @@
     em:nth-of-type(8),
     em:nth-of-type(9),
     em:nth-of-type(n+10),
-    em:last-of-type {
-      transform: rotateY(360deg);
+    em:nth-of-type(n+11) {
+      transform: rotateX(360deg);
     }
   }
   em {
-    padding: .2rem .1rem 0 0;
+    padding: .5rem .1rem 0 0;
     transition: background .25s, transform .25s;
     width: 1.1rem;
     
@@ -169,7 +169,7 @@
     &:nth-of-type(n+10) {
       transition-delay: .36s;
     }
-    &:last-of-type {
+    &:nth-of-type(n+11) {
       transition-delay: .4s;
     }
     

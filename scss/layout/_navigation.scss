@@ -37,7 +37,7 @@
               fill: $color-active-background;
             }
           }
-          .nav__loboName {
+          .nav__logoName {
             border-radius: 3px;
           }
         }
@@ -94,8 +94,8 @@
         span,
         label {
           height: 100%;
-          font-size: 2rem;
-          padding: 4px 4px 0 0;
+          font-size: 2em;
+          padding: 8px 4px 0 0;
         }
       }
       .pivot__groupList {
@@ -192,5 +192,6 @@
     }
   }
 }
+
 
 
