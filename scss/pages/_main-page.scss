@@ -9,9 +9,18 @@
   background: $color-main-background;
   height: 100%;
   min-height: 100%;
+  padding-top: 172px;
+  position: relative;
   [class*="main-"] {
     background-color: $color-section-background;
-    padding: 0 12px;
+    padding: 0 12px 24px;
+    z-index: 0;
+    -webkit-transform: translateZ(172px);
+    transform: translateZ(172px);
+    -webkit-transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     .heading__container {
       position: relative;
       height: 96px;

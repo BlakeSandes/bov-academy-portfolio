@@ -66,3 +66,10 @@
     fill: lighten($color-mainHeading-background, 5%);
   }
 }
+
+%headingDefaults {
+  font-family: 'fira_sans_condensedmedium', sans-serif;
+  font-weight: normal;
+  color: rgb(106, 131, 159);
+  text-shadow: 0 0 1px rgba(217,247,252,1);
+}

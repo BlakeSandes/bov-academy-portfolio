@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>BlakeSandes Portfolio</title>
   <script src="https://use.fontawesome.com/b5e330f3a1.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div id="main-container" class="main-container">
     <header class="main__header">
       <nav class="nav__container" role="navigation">
-
         <div class="nav__logoContainer">
           <div class="rotate__container nav__logo">
             <div class="btn-rotate45-lg btn-primary tabindex="1"></div>
@@ -38,29 +39,24 @@
         </div>
 
         <ul class="nav">
-          <li class="nav__item">
-            <div class="rotate__container">
-              <a href="#main-about" class="btn-rotate45-md btn-primary" role="button"><span>About</span></a>
-            </div>
-          </li>
           <li class="nav__item selected">
             <div class="rotate__container">
-              <a href="#main-projects" class="btn-rotate45-md btn-primary" role="button"><span>Projects</span></a>
+              <a href="#main-about" class="btn-rotate45-md btn-primary js-nav__link" role="button"><span>About</span></a>
             </div>
           </li>
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#main-skills" class="btn-rotate45-md btn-primary" role="button"><span>Skills</span></a>
+              <a href="#main-projects" class="btn-rotate45-md btn-primary js-nav__link" role="button"><span>Projects</span></a>
             </div>
           </li>
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#main-articles" class="btn-rotate45-md btn-primary" role="button"><span>Articles</span></a>
+              <a href="#main-skills" class="btn-rotate45-md btn-primary js-nav__link" role="button"><span>Skills</span></a>
             </div>
           </li>
           <li class="nav__item">
             <div class="rotate__container">
-              <a href="#main-contact" class="btn-rotate45-md btn-primary" role="button"><span>Contact</span></a>
+              <a href="#main-contact" class="btn-rotate45-md btn-primary js-nav__link" role="button"><span>Contact</span></a>
             </div>
           </li>
         </ul>
@@ -77,11 +73,10 @@
           </div>
 
           <ul class="groupList pivot__groupList pivot__rtAction">
-            <li class="selected"><a href="#!" class="groupList__link">About</a></li>
-            <li><a href="#!" class="groupList__link">Projects</a></li>
-            <li><a href="#!" class="groupList__link">Skills</a></li>
-            <li><a href="#!" class="groupList__link">Articles</a></li>
-            <li><a href="#!" class="groupList__link">Contact</a></li>
+            <li class="selected"><a href="#main-about" class="groupList__link js-nav__link">About</a></li>
+            <li><a href="#main-projects" class="groupList__link js-nav__link">Projects</a></li>
+            <li><a href="#main-skills" class="groupList__link js-nav__link">Skills</a></li>
+            <li><a href="#main-contact" class="groupList__link js-nav__link">Contact</a></li>
             <li><div class="input__outerContainer nav__searchContainer">
               <label for="search" class="input__label"></label>
               <div class="input__container input--md">
@@ -125,12 +120,12 @@
             <div class="rotate__container searchBtn__container">
               <a href="#showModal"><button class="btn-rotate45-xs btn-secondary searchBtn"><span class="fa fa-search"></span></button></a>
             </div>
-            <div class="c-modal__container" id="showModal">
-              <div class="c-modal">
-                <a href="#" class="c-modal--close"></a>
-                <p>Nothing to see here. Move along.</p>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="c-modal__container" id="showModal">
+          <div class="c-modal">
+            <a href="#!" class="c-modal--close"></a>
+            <p>Nothing to see here. Move along.</p>
           </div>
         </div>
       </nav>
@@ -166,64 +161,496 @@
           </svg>
         </article>
         <section class="projects__container">
-          <aside class="projects__sidebar">
-            <ul class="projects-level1">
-              <li><input type="radio" id="project-1" name="project-sidebar" checked><label for="project-1">Sidebar</label></li>
-              <li><input type="radio" id="project-2" name="project-sidebar" class="projects-forms"><label for="project-2">Forms</label>
-                <!-- <ul class="projects-level2 dropdown">
-                  <li><input type="radio" id="project-2_1" name="project-sidebar"><label for="project-2_1">Signup</label></li>
-                  <li><input type="radio" id="project-2_2" name="project-sidebar"><label for="project-2_2">Search</label></li>
-                  <li><input type="radio" id="project-2_3" name="project-sidebar"><label for="project-2_3">Questionaire</label></li>
-                  <li><input type="radio" id="project-2_4" name="project-sidebar"><label for="project-2_4">Login</label></li>
-                  <li><input type="radio" id="project-2_5" name="project-sidebar"><label for="project-2_5">Color Builder</label></li>
-                  <li><input type="radio" id="project-2_6" name="project-sidebar"><label for="project-2_6">Shipping/Billing</label></li>
-                  <li><input type="radio" id="project-2_7" name="project-sidebar"><label for="project-2_7">Scheduling</label></li>
-                  <li><input type="radio" id="project-2_8" name="project-sidebar"><label for="project-2_8">Credit/Debit</label></li>
-                </ul> -->
-              </li>
-              <li><input type="radio" id="project-3" name="project-sidebar"><label for="project-3">Calculator</label></li>
-              <li><input type="radio" id="project-4" name="project-sidebar"><label for="project-4">Shopping Cart</label></li>
-              <li><input type="radio" id="project-5" name="project-sidebar"><label for="project-5">Image Gallery</label></li>
-              <li><input type="radio" id="project-6" name="project-sidebar"><label for="project-6">CSS Accordian</label></li>
-              <li><input type="radio" id="project-7" name="project-sidebar"><label for="project-7">CSS Tabs</label></li>
-              <li><input type="radio" id="project-8" name="project-sidebar" class="projects-components"><label for="project-8">CSS Components</label></li>
-                <!-- <ul class="projects-level2 dropdown">
-                  <label for="project-8" class="projects-components--close">❌</label>
-                  <li><input type="radio" id="project-8_1" name="project-sidebar"><label for="project-8_1">Grid</label></li>
-                  <li><input type="radio" id="project-8_2" name="project-sidebar"><label for="project-8_2">Buttons</label></li>
-                  <li><input type="radio" id="project-8_3" name="project-sidebar"><label for="project-8_3">Input Groups</label></li>
-                  <li><input type="radio" id="project-8_4" name="project-sidebar"><label for="project-8_4">List Groups</label></li>
-                  <li><input type="radio" id="project-8_5" name="project-sidebar"><label for="project-8_5">Pivot Dropdown</label></li>
-                  <li><input type="radio" id="project-8_6" name="project-sidebar"><label for="project-8_6">Spiral Text</label></li>
-                </ul> -->
+          <!-- Carousel 1 -->
+          <input type="radio" id="project-1" name="project-sidebar" checked>
+          <label for="project-1">Sidebar</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="Sidebar">
+
+              <input type="radio" id="slide1__control" name="carousel-1" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here is one of the assignments, a simple sidebar for the Profiles.ModernDeveloper site.</p>
+                <label for="slide2__control" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="slide2__control" name="carousel-1" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="slide1__control" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/sidebar.png" alt="Profile Sidebar">
+                <label for="slide3__control" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="slide3__control" name="carousel-1" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="slide2__control" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/sidebarTop.png"  alt="Top half of sidebar profile.">
+                <label for="slide4__control" class="c-carousel__slide--next">⭆</label>
+              </div>
+
               
-              <li><input type="radio" id="project-9" name="project-sidebar"><label for="project-9">Books Modern Developer</label></li>
-            </ul>
-          </aside>
-          <div class="portfolio-carousel__container">
-            <!-- Labels associated with next action -->
-            <!-- <div class="pivot__controls pivot--rtSide pivot--downBtn">
-              <label for="carousel__item1" class="carousel__item1">↶</label>
-              <label for="carousel__item2" class="carousel__item2">↶</label>
-              <label for="carousel__item3" class="carousel__item3">↶</label>
-            </div> -->
-            
-            <!-- labels associated with previous action -->
-            <!-- <div class="pivot__controls pivot--rtSide pivot--upBtn">
-              <label for="carousel__item1" class="carousel__item1">↷</label>
-              <label for="carousel__item2" class="carousel__item2">↷</label>
-              <label for="carousel__item3" class="carousel__item3">↷</label>
-            </div> -->
-            
-            <!-- Carousel Slides -->
-            <div class="carousel__slide1 pivot__rtAction">
-              <img sizes="75vw" src="" alt="">
+              <input type="radio" id="slide4__control" name="carousel-1" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="slide3__control" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/sidebarBot.png"  alt="Bottom half of sidebar profile.">
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="slide1__control" class="page1">⬥</label>
+                <label for="slide2__control" class="page2">⬥</label>
+                <label for="slide3__control" class="page3">⬥</label>
+                <label for="slide4__control" class="page4">⬥</label>
+              </div>
             </div>
-            <div class="carousel__slide2 pivot__rtAction">
-              <img sizes="75vw"  src="" alt="">
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5 & CSS3</h4>
+            <p>This sidebar was built with basic HTML and CSS.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/03-Projects/04-Profiles-Sidebar/profile.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/blob/master/scss/components/_profile.scss" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 2 -->
+          <input type="radio" id="project-2" name="project-sidebar">
+          <label for="project-2">Forms</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="Forms">
+
+              <input type="radio" id="carousel2__slide1" name="carousel-2" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here is a bunch of forms I have built thus far.</p>
+                <label for="carousel2__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide2" name="carousel-2" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/signup.png" alt="Signup Form">
+                <label for="carousel2__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide3" name="carousel-2" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/recipe.png" alt="Recipe Form">
+                <label for="carousel2__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide4" name="carousel-2" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/questionaire.png" alt="Questionaire Form">
+                <label for="carousel2__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide5" name="carousel-2" class="slide-5__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide4" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/login.png" alt="Login Form">
+                <label for="carousel2__slide6" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide6" name="carousel-2" class="slide-6__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide5" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/shipping.png" alt="Shipping and Billing Form">
+                <label for="carousel2__slide7" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide7" name="carousel-2" class="slide-7__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide6" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/schedule.png" alt="Profile Sidebar">
+                <label for="carousel2__slide8" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel2__slide8" name="carousel-2" class="slide-8__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel2__slide7" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/credit.png" alt="Profile Sidebar">
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel2__slide1" class="page1">⬥</label>
+                <label for="carousel2__slide2" class="page2">⬥</label>
+                <label for="carousel2__slide3" class="page3">⬥</label>
+                <label for="carousel2__slide4" class="page4">⬥</label>
+                <label for="carousel2__slide5" class="page5">⬥</label>
+                <label for="carousel2__slide6" class="page6">⬥</label>
+                <label for="carousel2__slide7" class="page7">⬥</label>
+                <label for="carousel2__slide8" class="page8">⬥</label>
+              </div>
             </div>
-            <div class="carousel__slide3 pivot__rtAction">
-              <img sizes="75vw"  src=""  alt="">
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5, CSS3 & JAVASCRIPT</h4>
+            <p>I built all my forms with HTML and CSS and then implemented form validation with Javascript.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/02-Forms/forms.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/02-Forms" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 3 -->
+          <input type="radio" id="project-3" name="project-sidebar">
+          <label for="project-3">Calculator</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="Calculator">
+
+              <input type="radio" id="carousel3__slide1" name="carousel-3" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here within these slides resides a fully functional calculator!</p>
+                <label for="carousel3__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel3__slide2" name="carousel-3" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel3__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/calculator-1.png" alt="Calculator">
+                <label for="carousel3__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel3__slide3" name="carousel-3" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel3__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/calculator1.gif" alt="Recipe Form">
+                <label for="carousel3__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel3__slide4" name="carousel-3" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel3__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/calculator2.gif" alt="Questionaire Form">
+                <label for="carousel3__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel3__slide1" class="page1">⬥</label>
+                <label for="carousel3__slide2" class="page2">⬥</label>
+                <label for="carousel3__slide3" class="page3">⬥</label>
+                <label for="carousel3__slide4" class="page4">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5, CSS3 & JAVASCRIPT</h4>
+            <p>I built my calculator with HTML, CSS and Vanilla Javascript.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/03-Projects/01-Calculator/calculator.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/03-Projects/01-Calculator" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 4 -->
+          <input type="radio" id="project-4" name="project-sidebar">
+          <label for="project-4">Shopping Cart</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="Shopping Cart">
+
+              <input type="radio" id="carousel4__slide1" name="carousel-4" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>I built a Product Listing page with HTML, CSS, and Javascript.</p>
+                <label for="carousel4__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel4__slide2" name="carousel-4" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel4__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/productListing.png" alt="Product Listing Page">
+                <label for="carousel4__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel4__slide3" name="carousel-4" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel4__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/productListing1.png" alt="Product Listing Basket">
+                <label for="carousel4__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel4__slide4" name="carousel-4" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel4__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/productListing.gif" alt="Product List GIF">
+                <label for="carousel4__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel4__slide1" class="page1">⬥</label>
+                <label for="carousel4__slide2" class="page2">⬥</label>
+                <label for="carousel4__slide3" class="page3">⬥</label>
+                <label for="carousel4__slide4" class="page4">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5, CSS3 & JAVASCRIPT</h4>
+            <p>I built my calculator with HTML, CSS and Vanilla Javascript for validation and some DOM manipulation.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/03-Projects/03-Product-Listing-Page/products.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/03-Projects/03-Product-Listing-Page" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 5 -->
+          <input type="radio" id="project-5" name="project-sidebar">
+          <label for="project-5">Image Gallery</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="CSS Image Gallery">
+
+              <input type="radio" id="carousel5__slide1" name="carousel-5" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here within is an image gallery built with HTML5 and CSS3.</p>
+                <label for="carousel5__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel5__slide2" name="carousel-5" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel5__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/imageGallery.png" alt="Rusted truck in rickety shed.">
+                <label for="carousel5__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel5__slide3" name="carousel-5" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel5__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/imageGallery1.gif" alt="Image Gallery GIf">
+                <label for="carousel5__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel5__slide4" name="carousel-5" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel5__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/imageGallery2.gif" alt="Image Gallery GIF">
+                <label for="carousel5__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel5__slide1" class="page1">⬥</label>
+                <label for="carousel5__slide2" class="page2">⬥</label>
+                <label for="carousel5__slide3" class="page3">⬥</label>
+                <label for="carousel5__slide4" class="page4">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5 & CSS3.</h4>
+            <p>The Image Gallery is built with  HTML & CSS only.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/03-Projects/06-Image-Gallery/imageGallery.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/03-Projects" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 6 -->
+          <input type="radio" id="project-6" name="project-sidebar">
+          <label for="project-6">CSS Accordian</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="CSS Accordian">
+
+              <input type="radio" id="carousel6__slide1" name="carousel-6" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here within is an accordian built purely with HTML5 and CSS3.</p>
+                <label for="carousel6__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel6__slide2" name="carousel-6" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel6__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/accordian1.png" alt="A CSS Accordian.">
+                <label for="carousel6__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel6__slide3" name="carousel-6" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel6__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/accordian2.png" alt="A CSS Accordian">
+                <label for="carousel6__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel6__slide4" name="carousel-6" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel6__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/accordian.gif" alt="CSS Accordian GIF">
+                <label for="carousel6__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel6__slide1" class="page1">⬥</label>
+                <label for="carousel6__slide2" class="page2">⬥</label>
+                <label for="carousel6__slide3" class="page3">⬥</label>
+                <label for="carousel6__slide4" class="page4">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5 & CSS3.</h4>
+            <p>This Accordian is built with  HTML & CSS only.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/01-Components/03-Accordian/accordian.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/01-Components" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 7 -->
+          <input type="radio" id="project-7" name="project-sidebar">
+          <label for="project-7">CSS Tabs</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="CSS Tabs">
+
+              <input type="radio" id="carousel7__slide1" name="carousel-7" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here within is a CSS tab component in all it's splendor!.</p>
+                <label for="carousel7__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel7__slide2" name="carousel-7" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel7__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/tabs1.png" alt="A CSS Tab Component.">
+                <label for="carousel7__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel7__slide3" name="carousel-7" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel7__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/tabs.GIF" alt="A CSS Tabs component gif.">
+                <label for="carousel7__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel7__slide1" class="page1">⬥</label>
+                <label for="carousel7__slide2" class="page2">⬥</label>
+                <label for="carousel7__slide3" class="page3">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5 & CSS3.</h4>
+            <p>The tabs component is built with  HTML & CSS only.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/01-Components/02-Tabs/tabs.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/01-Components" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 8 -->
+          <input type="radio" id="project-8" name="project-sidebar">
+          <label for="project-8">Color Picker</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="CSS Color Picker">
+
+              <input type="radio" id="carousel8__slide1" name="carousel-8" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>I have built a color picker with HTML5, CSS3, and Javascript.</p>
+                <label for="carousel8__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel8__slide2" name="carousel-8" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel8__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/colorPicker.png" alt="A Color Picker.">
+                <label for="carousel8__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel8__slide3" name="carousel-8" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel8__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/colorPicker.gif" alt="A color picker gif.">
+                <label for="carousel8__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel8__slide1" class="page1">⬥</label>
+                <label for="carousel8__slide2" class="page2">⬥</label>
+                <label for="carousel8__slide3" class="page3">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5,CSS3 & Javascript.</h4>
+            <p>This RGBA color picker is built with HTML5, CSS3 and Vanilla Javascript.</p>
+            <a href="https://blakesandes.github.io/moderndeveloper-projects/03-Projects/02-Color-Builder/color.html" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/moderndeveloper-projects/tree/master/03-Projects/01-Calculator" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 9 -->
+          <input type="radio" id="project-9" name="project-sidebar">
+          <label for="project-9">Books Modern Developer</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="Books.ModernDeveloper">
+
+              <input type="radio" id="carousel9__slide1" name="carousel-9" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here is a team project I did with one other classmate for Bov Academy's Books.ModernDeveloper site.</p>
+                <label for="carousel9__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel9__slide2" name="carousel-9" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel9__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/booksModernDeveloper1.png" alt="A CSS Accordian.">
+                <label for="carousel9__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel9__slide3" name="carousel-9" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel9__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/booksModernDeveloper2.png" alt="A CSS Accordian">
+                <label for="carousel9__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel9__slide4" name="carousel-9" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel9__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/booksModernDeveloper.gif" alt="CSS Accordian GIF">
+                <label for="carousel9__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel9__slide1" class="page1">⬥</label>
+                <label for="carousel9__slide2" class="page2">⬥</label>
+                <label for="carousel9__slide3" class="page3">⬥</label>
+                <label for="carousel9__slide4" class="page4">⬥</label>
+              </div>
+            </div>
+            <h4 class="c-carousel__subheading">TECHNOLOGIES: HTML5 & CSS3.</h4>
+            <p>The Books.ModernDeveloper demo site was built with another team mate and in it's present iteration is only the non-responsive full screen design.</p>
+            <a href="https://blakesandes.github.io/Books-ModernDeveloper/" class="site-link">Demo Site</a>
+            <a href="https://github.com/BlakeSandes/Books-ModernDeveloper" class="github-link">Link to Github</a>
+          </div>
+          <!-- Carousel 10 -->
+          <input type="radio" id="project-10" name="project-sidebar">
+          <label for="project-10">UI Framework Hackathon</label>
+          <div class="c-carousel__container">
+            <div class="c-carousel" data-title="UI Framework Hackathon">
+
+              <input type="radio" id="carousel10__slide1" name="carousel-10" class="slide-1__radio" checked>
+              <div class="c-carousel__slide">
+                <p>Here is a team Hackathon where I built a number of components as well as the site component section.</p>
+                <label for="carousel10__slide2" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide2" name="carousel-10" class="slide-2__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide1" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework1.png" alt="A CSS Accordian.">
+                <label for="carousel10__slide3" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide3" name="carousel-10" class="slide-3__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide2" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework2.png" alt="A CSS Accordian">
+                <label for="carousel10__slide4" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide4" name="carousel-10" class="slide-4__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide3" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework3.png" alt="CSS Accordian GIF">
+                <label for="carousel10__slide5" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide5" name="carousel-10" class="slide-5__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide4" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework4.png" alt="CSS Accordian GIF">
+                <label for="carousel10__slide6" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide6" name="carousel-10" class="slide-6__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide5" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework1.gif" alt="CSS Accordian GIF">
+                <label for="carousel10__slide7" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide7" name="carousel-10" class="slide-7__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide6" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework2.gif" alt="CSS Accordian GIF">
+                <label for="carousel10__slide8" class="c-carousel__slide--next">⭆</label>
+              </div>
+
+              <input type="radio" id="carousel10__slide8" name="carousel-10" class="slide-8__radio">
+              <div class="c-carousel__slide">
+                <label for="carousel10__slide7" class="c-carousel__slide--previous">⭅</label>
+                <img src="images/uiFramework3.gif" alt="CSS Accordian GIF">
+              </div>
+
+              <div class="c-carousel__pagination">
+                <label for="carousel10__slide1" class="page1">⬥</label>
+                <label for="carousel10__slide2" class="page2">⬥</label>
+                <label for="carousel10__slide3" class="page3">⬥</label>
+                <label for="carousel10__slide4" class="page4">⬥</label>
+                <label for="carousel10__slide5" class="page5">⬥</label>
+                <label for="carousel10__slide6" class="page6">⬥</label>
+                <label for="carousel10__slide7" class="page7">⬥</label>
+                <label for="carousel10__slide8" class="page8">⬥</label>
+              </div>
             </div>
           </div>
         </section>
@@ -436,15 +863,6 @@
           </div>
         </div>
       </section>
-      <section id="main-articles" class="main-articles">
-        <article class="heading__container">
-          <h1 class="section-heading">Articles</h1>
-          <svg class="polygon__container" width="200px" height="120px" viewBox="0 0 200 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs></defs>
-            <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
-          </svg>
-        </article>
-      </section>
       <section id="main-contact" class="main-contact">
         <article class="heading__container">
           <h1 class="section-heading">Contact</h1>
@@ -453,11 +871,66 @@
             <polygon id="Polygon" fill="#6AC6EF" points="100 0 200 60 100 120 0 60"></polygon>
           </svg>
         </article>
+        <div class="c-card__container">
+          <input type="checkbox" id="c-card-back">
+          <div class="c-card">
+            <div class="c-card__front">
+              <label for="c-card-back" class="c-card__label">
+                <i class="material-icons">flip_to_back</i>
+              </label>
+              <h1 class="c-card__heading">Blake Wilson</h1>
+              <h5 class="c-card__subheading">Student at Bov Academy</h5> 
+              <p class="c-card__bodyCopy">Blake Wilson is a student at Bov Academy striving to be superb; whom loves minimalist design, expressive colors, and the mental and emotional exhilaration from solving problems!</p>
+              <a href="mailto:blakesandes@protonmail.com" class="c-card__link">email</a>
+              <a href="https://blakesandes.github.io/moderndeveloper-projects/" class="c-card__link">One of my sites</a>
+              <p class="c-card__bodyCopy">Blake Wilson <br> <em>on</em> <a href="https://encyclopedia.moderndeveloper.com/" class="c-card__link">Encyclopedia.MD</a></p>
+              <div class="c-card__socialIcons">
+                  <a href="https://github.com/blakesandes"><img src="images/github1.png" alt=""></a>
+                  <a href="https://www.linkedin.com/in/blake-wilson-ab650163/"><img src="images/linkedin.png" alt=""></a>
+              </div>
+            </div>
+            <div class="c-card__back">
+              <label for="c-card-back" class="c-card__label">
+                <i class="material-icons">flip_to_front</i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="c-contact__container">
+          <form action="" id="login-form" class="loginForm" novalidate>
+            <div class="error-div">
+              <p><em>Error:</em> empty or insufficient input.</p>
+            </div>
+            <article class="heading">
+              <p class="firstP">I would love to hear your feedback!</p>
+            </article>
+            <fieldset>
+              <ol>
+                <li>
+                  <label for="name"></label>
+                  <input type="text" id="name" name="name" placeholder="Name">
+                </li>
+                <li class="email">
+                  <label for="email"></label>
+                  <input type="email" id="password" name="email" placeholder="Email">
+                  <a class="composeEmail" href="mailto:blakesandes@protonmail.com">Compose Email</a>
+                </li>
+                <li class="remember">
+                  <label for="remember_me">Remember Me</label>
+                  <span><input type="checkbox" id="remember_me" name="remember_me"></span>
+                </li>
+                <button type="submit" name="login" form="login-form" class="contactFormBtn">Contact Me!</button>
+              </ol>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
-    <footer>
-      
+    <footer class="footer">
+     <p><span>Copyright</span> <span>2017</span><span>Blake Wilson</span></p> 
     </footer>
   </div>
+  <script src="scripts/nav.js"></script>
+  <<script src="scripts/carousel.js"></script>
 </body>
 </html>

@@ -8,8 +8,8 @@
  
 @import 'layout/grid';
 @import 'layout/navigation';
+@import 'layout/footer';
 // @import 'layout/header';
-// @import 'layout/footer';
 // @import 'layout/sidebar';
  
 @import 'components/buttons'; 
@@ -19,6 +19,9 @@
 @import 'components/pivotDropdown';
 @import 'components/graphs';
 @import 'components/modal';
+@import 'components/businessCard';
+@import 'components/contact';
+@import 'components/carousel';
 
  
 @import 'pages/main-page';

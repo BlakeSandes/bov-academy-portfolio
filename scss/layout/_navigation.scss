@@ -3,6 +3,8 @@
   border-bottom: 4px solid $color-header-border;
   height: 172px;
   width: 100%;
+  position: fixed;
+  z-index: 144;
   .nav__container {
     -webkit-flex-direction: row;
     display: -webkit-flex;
@@ -46,35 +48,34 @@
     .nav {
       @extend %flexDefaultState;
       justify-content: center;
-      margin: 0 12px;
+      // margin: 0 px;
       @media screen and (max-width: 900px) {
         display: none;
       }
       .nav__item {
+        transition: margin-bottom 1s;
         @media  screen and (max-width: 1200px) {
           a {
             width: 64px;
             height: 64px;
             margin: 12px 4px;
             font-size: 1.2rem;
+            transition: background 1s;
             &:hover {
               background: $color-btnHover-background;
             }
           }
         }  
         &.selected {
-          align-self: flex-start;
-          margin-top: 84px;
+          align-self: flex-end;
+          transition: margin-bottom 1s;
+          margin-bottom: -24px;
           @media  screen and (max-width: 1200px) {
-            margin-top: 108px;
+            margin-bottom: -28px;
           }
           a {
-            margin-left: 0;
-            margin-right: 0;
             background: $color-active-background;
             @media  screen and (max-width: 1200px) {
-              margin-left: 0;
-              margin-right: 0;
               background: $color-active-background; 
             }
           }

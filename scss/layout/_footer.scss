@@ -1,0 +1,38 @@
+.footer {
+  background: lighten($color-header-background, 10%);
+  border-top: 3px solid lighten($color-header-border, 10%);
+  height: 84px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    span {
+      &:first-of-type {
+        color: $color-mainHeading-fontColor;
+      }
+      &:nth-of-type(2) {
+        color: darken($color-mainHeading-fontColor, 15%);
+      }
+      &:first-of-type,
+      &:nth-of-type(2) {
+        padding-right: 12px;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: '|';
+          font-size: 1.5em;
+          color: $color-btnHover-background;
+          top: -.40em;
+          right: 0;
+        }
+      }
+      &:last-of-type {
+        color: darken($color-mainHeading-fontColor, 10%);
+        font-family: 'fira_sans_condensedmedium', sans-serif;
+        font-weight: bold;
+        padding-left: 6px;
+      }
+    }
+  }
+}
