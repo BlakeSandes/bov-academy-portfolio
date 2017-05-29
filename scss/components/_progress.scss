@@ -1,0 +1,51 @@
+.c-progress__container {
+  max-width: 800px;
+  margin: 120px auto 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  .c-progress__bar {
+    position: relative;
+    width: 49%;
+    height: 48px;
+    background-image: -webkit-linear-gradient(top, darken($color-graph-background,10%), darken($color-graph-background,6%) 8%, darken($color-graph-background,3%) 50%, darken($color-graph-background, 6%) 92%, darken($color-graph-background, 10%));
+    border-right: 3px solid darken($color-graph-background, 8%);
+    border-radius: 6px;
+    @media screen and (max-width: 600px) {
+      max-width: 400px;
+      width: 100%;
+      &:first-of-type {
+        margin-bottom: 48px;
+      }
+    }
+    &::before {
+      content: attr(data-title);
+      position: absolute;
+      font-size: 1.1em;
+      top: -1.8em;
+      color: $color-graph-heading;
+      margin-left: 4px;
+    }
+    span {
+      background-color: darken($color-graph-background, 5%);
+      border: 1px solid $color-graph-border;
+      box-shadow: 6px 0 3px -3px darken($color-graph-background, 12%), 0 0 2px darken($color-graph-background, 12%);
+      position: relative;
+      height: inherit;
+      display: block;
+      border-radius: 18px;
+      &::after {
+        position: absolute;
+        content: attr(value)'%';
+        right: 0;
+        color: #fff;
+        top: 12px;
+        margin-right: 4px;
+        font-size: 1em;
+      }
+    }
+  }
+}
