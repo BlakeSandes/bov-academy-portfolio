@@ -1,7 +1,7 @@
 .projects__container {
   position: relative;
-  width: 98%;
-  height: inherit;
+  width: 100%;
+  height: 620px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 1em 0;
@@ -11,14 +11,51 @@
   background: $color-sidebar-background;
   box-shadow: 0 0 3px 1px darken($color-sidebar-background, 50%);
   border-radius: 3px;
+  .showLabels {
+    position: absolute;
+    top: .65em;
+    left: 1.35em;
+    z-index: 20;
+    transition: visibility .5s, opacity .5s;
+    // transition-delay: .6s;
+    @media screen and (min-width: 760px) {
+      visibility: hidden;
+      opacity: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      &:before {
+        transition: color .6s, transform .6s;
+        color: #FF4978;
+      }
+    }
+    &:before {
+      content: '➲';
+      display: block;
+      font-size: 2.25em;
+    }
+  }
+  input[type=checkbox] {
+    display: none;
+    &:checked {
+      + .showLabels {
+        &:before {
+          transform: rotate(-180deg);
+        }
+      }
+      ~ label:not(.showLabels) {
+        margin-left: 0;
+      }
+    }
+  }
+
   input[type=radio] {
     display: none;
   }
-  
-  > label {
+  > label:not(.showLabels) {
     box-shadow: 4px 2px 6px  darken($color-section-border, 5%);
-    width: 20%;
     min-width: 200px;
+    width: 20%;
     transition: background .3s;
     transition-timing-function: ease-in;
     height: 42px;
@@ -28,7 +65,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 12;
-    transition: background .15s, width .25s, height .7s, font-size .5s;
+    transition: background .15s, width .25s, height .7s, font-size .5s, margin-left .6s;
     &:nth-of-type(odd) {
       background: $color-listDark-background;
       &:hover {
@@ -41,7 +78,7 @@
         background: darken($color-listLight-background,2%);
       }
     }
-    &:first-of-type {
+    &:nth-of-type(2) {
       border-radius: 0 3px 0 0;
       margin-top: 48px;
     }
@@ -53,6 +90,9 @@
       cursor: pointer;
       width: 206px;
       border-radius: 0 3px 3px 0;
+    }
+    @media screen and (max-width: 760px) {
+      margin-left: -232px;
     }
   }
   > input[type=radio]:checked + label {
@@ -78,7 +118,13 @@
     transform: translate(216px, 0);
     border: 4px solid $color-section-border;
     border-radius: 4px;
+    left: 0;
     background: linear-gradient(to top, desaturate($color-sidebar-background, 16%), saturate($color-sidebar-background, 28%));
+    @media screen and (max-width: 760px) {
+      width: calc(100% - 32px);
+      left: 16px;
+      transform: translate(0,0);
+    }
     .c-carousel {
       visibility: hidden;
       opacity: 0;
@@ -180,10 +226,14 @@
     }
     p {
       margin: 1.2em 1.8em 1em;
+      color: lighten($color-mainText-fontColor, 1%);
     }
     .site-link,
-    .github-ink {
+    .github-link {
       margin-bottom: 1.5em;
+      &:hover {
+        color: darken($color-headLink-background, 12%);
+      }
     }
     .site-link {
       margin-left: 1.8em;

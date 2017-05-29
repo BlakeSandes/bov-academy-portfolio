@@ -589,13 +589,12 @@ p, a, li, blockquote {
       .main__header .nav__container .nav__mobile .pivot__controls label {
         height: 100%;
         font-size: 2em;
-        padding: 8px 4px 0 0; }
+        padding-top: 8px; }
       .main__header .nav__container .nav__mobile .pivot__groupList {
         top: 72%;
         right: 50px;
         width: 220px;
-        font-size: 1.4rem;
-        z-index: 3; }
+        font-size: 1.4rem; }
         .main__header .nav__container .nav__mobile .pivot__groupList .groupList__link {
           background: #6AC6EF;
           color: #496F9A; }
@@ -1861,6 +1860,52 @@ p, a, li, blockquote {
     top: -54px;
     margin-top: 12px; }
 
+.c-progress__container {
+  max-width: 800px;
+  margin: 120px auto 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 600px) {
+    .c-progress__container {
+      flex-direction: column; } }
+  .c-progress__container .c-progress__bar {
+    position: relative;
+    width: 49%;
+    height: 48px;
+    background-image: -webkit-linear-gradient(top, #3b465e, #434f6a 8%, #495674 50%, #434f6a 92%, #3b465e);
+    border-right: 3px solid #3f4a64;
+    border-radius: 6px; }
+    @media screen and (max-width: 600px) {
+      .c-progress__container .c-progress__bar {
+        max-width: 400px;
+        width: 100%; }
+        .c-progress__container .c-progress__bar:first-of-type {
+          margin-bottom: 48px; } }
+    .c-progress__container .c-progress__bar::before {
+      content: attr(data-title);
+      position: absolute;
+      font-size: 1.1em;
+      top: -1.8em;
+      color: #2f4b6a;
+      margin-left: 4px; }
+    .c-progress__container .c-progress__bar span {
+      background-color: #45516d;
+      border: 1px solid #1fd8ff;
+      box-shadow: 6px 0 3px -3px #374158, 0 0 2px #374158;
+      position: relative;
+      height: inherit;
+      display: block;
+      border-radius: 18px; }
+      .c-progress__container .c-progress__bar span::after {
+        position: absolute;
+        content: attr(value) "%";
+        right: 0;
+        color: #fff;
+        top: 12px;
+        margin-right: 4px;
+        font-size: 1em; }
+
 .emphasis {
   border: 1px solid #A8E0EC;
   background-color: #E8F9FF;
@@ -1937,8 +1982,8 @@ p, a, li, blockquote {
 
 .projects__container {
   position: relative;
-  width: 98%;
-  height: inherit;
+  width: 100%;
+  height: 620px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 1em 0;
@@ -1948,12 +1993,37 @@ p, a, li, blockquote {
   background: #BBEEF9;
   box-shadow: 0 0 3px 1px #0f8ba6;
   border-radius: 3px; }
+  .projects__container .showLabels {
+    position: absolute;
+    top: .65em;
+    left: 1.35em;
+    z-index: 20;
+    transition: visibility .5s, opacity .5s; }
+    @media screen and (min-width: 760px) {
+      .projects__container .showLabels {
+        visibility: hidden;
+        opacity: 0; } }
+    .projects__container .showLabels:hover {
+      cursor: pointer; }
+      .projects__container .showLabels:hover:before {
+        transition: color .6s, transform .6s;
+        color: #FF4978; }
+    .projects__container .showLabels:before {
+      content: '➲';
+      display: block;
+      font-size: 2.25em; }
+  .projects__container input[type=checkbox] {
+    display: none; }
+    .projects__container input[type=checkbox]:checked + .showLabels:before {
+      transform: rotate(-180deg); }
+    .projects__container input[type=checkbox]:checked ~ label:not(.showLabels) {
+      margin-left: 0; }
   .projects__container input[type=radio] {
     display: none; }
-  .projects__container > label {
+  .projects__container > label:not(.showLabels) {
     box-shadow: 4px 2px 6px #93d9e7;
-    width: 20%;
     min-width: 200px;
+    width: 20%;
     transition: background .3s;
     transition-timing-function: ease-in;
     height: 42px;
@@ -1963,25 +2033,28 @@ p, a, li, blockquote {
     flex-direction: column;
     justify-content: center;
     z-index: 12;
-    transition: background .15s, width .25s, height .7s, font-size .5s; }
-    .projects__container > label:nth-of-type(odd) {
+    transition: background .15s, width .25s, height .7s, font-size .5s, margin-left .6s; }
+    .projects__container > label:not(.showLabels):nth-of-type(odd) {
       background: #ECFDFF; }
-      .projects__container > label:nth-of-type(odd):hover {
+      .projects__container > label:not(.showLabels):nth-of-type(odd):hover {
         background: #e2fcff; }
-    .projects__container > label:nth-of-type(even) {
+    .projects__container > label:not(.showLabels):nth-of-type(even) {
       background: #E8F9FF; }
-      .projects__container > label:nth-of-type(even):hover {
+      .projects__container > label:not(.showLabels):nth-of-type(even):hover {
         background: #def6ff; }
-    .projects__container > label:first-of-type {
+    .projects__container > label:not(.showLabels):nth-of-type(2) {
       border-radius: 0 3px 0 0;
       margin-top: 48px; }
-    .projects__container > label:last-of-type {
+    .projects__container > label:not(.showLabels):last-of-type {
       border-radius: 0 0 3px 0;
       margin-bottom: 108px; }
-    .projects__container > label:hover {
+    .projects__container > label:not(.showLabels):hover {
       cursor: pointer;
       width: 206px;
       border-radius: 0 3px 3px 0; }
+    @media screen and (max-width: 760px) {
+      .projects__container > label:not(.showLabels) {
+        margin-left: -232px; } }
   .projects__container > input[type=radio]:checked + label {
     border-top: 4px solid #A8E0EC;
     border-right: 4px solid #A8E0EC;
@@ -2002,7 +2075,13 @@ p, a, li, blockquote {
     transform: translate(216px, 0);
     border: 4px solid #A8E0EC;
     border-radius: 4px;
+    left: 0;
     background: linear-gradient(to top, #c1eaf3, #b5f2ff); }
+    @media screen and (max-width: 760px) {
+      .projects__container .c-carousel__container {
+        width: calc(100% - 32px);
+        left: 16px;
+        transform: translate(0, 0); } }
     .projects__container .c-carousel__container .c-carousel {
       visibility: hidden;
       opacity: 0;
@@ -2082,10 +2161,14 @@ p, a, li, blockquote {
     .projects__container .c-carousel__container .c-carousel__subheading {
       margin: 2.6em 0 0 1.8em; }
     .projects__container .c-carousel__container p {
-      margin: 1.2em 1.8em 1em; }
+      margin: 1.2em 1.8em 1em;
+      color: #6c86a2; }
     .projects__container .c-carousel__container .site-link,
-    .projects__container .c-carousel__container .github-ink {
+    .projects__container .c-carousel__container .github-link {
       margin-bottom: 1.5em; }
+      .projects__container .c-carousel__container .site-link:hover,
+      .projects__container .c-carousel__container .github-link:hover {
+        color: #16ebd7; }
     .projects__container .c-carousel__container .site-link {
       margin-left: 1.8em;
       color: #446890; }
