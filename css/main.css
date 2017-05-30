@@ -589,13 +589,12 @@ p, a, li, blockquote {
       .main__header .nav__container .nav__mobile .pivot__controls label {
         height: 100%;
         font-size: 2em;
-        padding-left: 8px; }
+        padding-top: 8px; }
       .main__header .nav__container .nav__mobile .pivot__groupList {
         top: 72%;
         right: 50px;
         width: 220px;
-        font-size: 1.4rem;
-        z-index: 3; }
+        font-size: 1.4rem; }
         .main__header .nav__container .nav__mobile .pivot__groupList .groupList__link {
           background: #6AC6EF;
           color: #496F9A; }
