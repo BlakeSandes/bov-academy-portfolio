@@ -589,7 +589,7 @@ p, a, li, blockquote {
       .main__header .nav__container .nav__mobile .pivot__controls label {
         height: 100%;
         font-size: 2em;
-        padding: 8px 4px 0 0; }
+        padding-left: 8px; }
       .main__header .nav__container .nav__mobile .pivot__groupList {
         top: 72%;
         right: 50px;
@@ -1860,6 +1860,52 @@ p, a, li, blockquote {
     visibility: visible;
     top: -54px;
     margin-top: 12px; }
+
+.c-progress__container {
+  max-width: 800px;
+  margin: 120px auto 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 600px) {
+    .c-progress__container {
+      flex-direction: column; } }
+  .c-progress__container .c-progress__bar {
+    position: relative;
+    width: 49%;
+    height: 48px;
+    background-image: -webkit-linear-gradient(top, #3b465e, #434f6a 8%, #495674 50%, #434f6a 92%, #3b465e);
+    border-right: 3px solid #3f4a64;
+    border-radius: 6px; }
+    @media screen and (max-width: 600px) {
+      .c-progress__container .c-progress__bar {
+        max-width: 400px;
+        width: 100%; }
+        .c-progress__container .c-progress__bar:first-of-type {
+          margin-bottom: 48px; } }
+    .c-progress__container .c-progress__bar::before {
+      content: attr(data-title);
+      position: absolute;
+      font-size: 1.1em;
+      top: -1.8em;
+      color: #2f4b6a;
+      margin-left: 4px; }
+    .c-progress__container .c-progress__bar span {
+      background-color: #45516d;
+      border: 1px solid #1fd8ff;
+      box-shadow: 6px 0 3px -3px #374158, 0 0 2px #374158;
+      position: relative;
+      height: inherit;
+      display: block;
+      border-radius: 18px; }
+      .c-progress__container .c-progress__bar span::after {
+        position: absolute;
+        content: attr(value) "%";
+        right: 0;
+        color: #fff;
+        top: 12px;
+        margin-right: 4px;
+        font-size: 1em; }
 
 .emphasis {
   border: 1px solid #A8E0EC;
