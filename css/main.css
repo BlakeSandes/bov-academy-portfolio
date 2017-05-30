@@ -2173,11 +2173,12 @@ p, a, li, blockquote {
         .projects__container .c-carousel__container .c-carousel .c-carousel__slide .c-carousel__slide--previous {
           position: absolute;
           font-size: 1.8em;
-          top: 5.6em; }
+          top: 5.6em;
+          transition: color .6s; }
           .projects__container .c-carousel__container .c-carousel .c-carousel__slide .c-carousel__slide--next:hover,
           .projects__container .c-carousel__container .c-carousel .c-carousel__slide .c-carousel__slide--previous:hover {
             cursor: pointer;
-            opacity: .7; }
+            color: #FF4978; }
         .projects__container .c-carousel__container .c-carousel .c-carousel__slide .c-carousel__slide--next {
           right: -1em; }
         .projects__container .c-carousel__container .c-carousel .c-carousel__slide .c-carousel__slide--previous {
@@ -2195,6 +2196,9 @@ p, a, li, blockquote {
           font-size: 1.5em;
           margin: 0 8px;
           color: #4EF0E1; }
+          @media screen and (max-width: 600px) {
+            .projects__container .c-carousel__container .c-carousel .c-carousel__pagination label {
+              margin: 0 4px; } }
       .projects__container .c-carousel__container .c-carousel .slide-1__radio:checked ~ .c-carousel__pagination .page1,
       .projects__container .c-carousel__container .c-carousel .slide-2__radio:checked ~ .c-carousel__pagination .page2,
       .projects__container .c-carousel__container .c-carousel .slide-3__radio:checked ~ .c-carousel__pagination .page3,

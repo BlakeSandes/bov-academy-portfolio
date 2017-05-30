@@ -1,3 +1,5 @@
+$color-projectArrow-hoverColor: #FF4978;
+
 .projects__container {
   position: relative;
   width: 100%;
@@ -26,7 +28,7 @@
       cursor: pointer;
       &:before {
         transition: color .6s, transform .6s;
-        color: #FF4978;
+        color: $color-projectArrow-hoverColor;
       }
     }
     &:before {
@@ -181,9 +183,10 @@
           position: absolute;
           font-size: 1.8em;
           top: 5.6em;
+          transition: color .6s;
           &:hover {
             cursor: pointer;
-            opacity: .7;
+            color: $color-projectArrow-hoverColor;
           }
           
         }
@@ -208,6 +211,9 @@
           font-size: 1.5em;
           margin: 0 8px;
           color: $color-primaryBtn-background;
+          @media screen and(max-width: 600px) {
+            margin: 0 4px;
+          }
         }
       }
       .slide-1__radio:checked ~ .c-carousel__pagination .page1,
