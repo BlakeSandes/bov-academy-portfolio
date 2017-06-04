@@ -163,10 +163,17 @@ img {
 
 body {
   font-size: 100%; }
+<<<<<<< HEAD
 
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5; }
 
+=======
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5; }
+
+>>>>>>> master
 body {
   font-size: 1em;
   /* equivalent to 16px */
@@ -469,6 +476,7 @@ p, a, li, blockquote {
 
   .pillar-lg-12 {
     width: 100%; }
+<<<<<<< HEAD
 
   .space-lg-1 {
     margin-left: 8.5%; }
@@ -503,6 +511,42 @@ p, a, li, blockquote {
   .space-lg-11 {
     margin-left: 93.5%; }
 
+=======
+
+  .space-lg-1 {
+    margin-left: 8.5%; }
+
+  .space-lg-2 {
+    margin-left: 17%; }
+
+  .space-lg-3 {
+    margin-left: 25.5%; }
+
+  .space-lg-4 {
+    margin-left: 34%; }
+
+  .space-lg-5 {
+    margin-left: 42.5%; }
+
+  .space-lg-6 {
+    margin-left: 51%; }
+
+  .space-lg-7 {
+    margin-left: 59.5%; }
+
+  .space-lg-8 {
+    margin-left: 68%; }
+
+  .space-lg-9 {
+    margin-left: 76.5; }
+
+  .space-lg-10 {
+    margin-left: 85%; }
+
+  .space-lg-11 {
+    margin-left: 93.5%; }
+
+>>>>>>> master
   [class*="pillar-lg"].space-lg-none {
     margin-left: auto; } }
 .main__header {
@@ -696,17 +740,32 @@ p, a, li, blockquote {
 .btn-primary {
   box-shadow: 1px 1px 3px #6983A0;
   background: #4EF0E1;
-  color: #496F9A; }
+  color: #496F9A;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn-active {
   box-shadow: 1px 1px 3px #6983A0;
   background: #4EA9F0;
-  color: #496F9A; }
+  color: #496F9A;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn-secondary {
   box-shadow: 1px 1px 3px #6983A0;
   background: #C9EDF7;
-  color: #4EA9F0; }
+  color: #4EA9F0;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn-xs-w {
   width: 48px; }
@@ -1969,11 +2028,19 @@ p, a, li, blockquote {
     float: right;
     display: inline-block; }
     @media screen and (max-width: 600px) {
+<<<<<<< HEAD
       .main-about .about__container .about__figure {
         width: 57.5%;
         padding: 24px; } }
     @media screen and (min-width: 600px) {
       .main-about .about__container .about__figure {
+=======
+      .main-about .about__container .about__figure {
+        width: 57.5%;
+        padding: 24px; } }
+    @media screen and (min-width: 600px) {
+      .main-about .about__container .about__figure {
+>>>>>>> master
         width: 40.5%; } }
     @media screen and (min-width: 900px) {
       .main-about .about__container .about__figure {
