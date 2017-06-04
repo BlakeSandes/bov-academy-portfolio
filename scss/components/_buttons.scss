@@ -4,6 +4,11 @@
 
 [class^="btn"] {
   @include buttonStyle($boxShadow: 1px 1px 3px $color-defaultBtn-shadow, $background: $color-defaultBtn-background, $color: $color-defaultBtn-fontColor);
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background .5s;
 }
 

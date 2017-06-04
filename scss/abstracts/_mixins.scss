@@ -9,11 +9,7 @@
   box-shadow: $boxShadow;
   background: $background;
   color: $color;
-  width: auto;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 @mixin topTriContainer {
