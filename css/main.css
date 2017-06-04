@@ -503,7 +503,7 @@ p, a, li, blockquote {
   .space-lg-11 {
     margin-left: 93.5%; }
 
-  [class*="pillar-lg"].space-lg-none {
+  .space-lg-none {
     margin-left: auto; } }
 .main__header {
   background: #51C1D9;
