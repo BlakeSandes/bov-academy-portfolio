@@ -46,16 +46,6 @@ body:before {
 =======
 @charset "UTF-8";
 /*************Purpose of Colors************/
-[class^="btn"] {
-  width: auto;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 1px 1px 3px #6983A0;
-  background: #F8FDFF;
-  color: #7d95ab; }
-
 .main__header .nav__container .nav, .main__header .nav__container .nav__searchContainer, .pivotDropdown__container {
   flex: auto;
   display: -webkit-flex;
@@ -732,27 +722,52 @@ p, a, li, blockquote {
     padding-left: 6px; }
 
 [class^="btn"] {
-  cursor: pointer;
-  -webkit-transition: background .5s;
+  box-shadow: 1px 1px 3px #6983A0;
+  background: #F8FDFF;
+  color: #7d95ab;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background .5s; }
 
 [class^="btn"]:hover {
-  background: #84FFF2; }
+  background: #84FFF2;
+  cursor: pointer; }
 
 [class^="btn"]:focus {
   background: #84FFF2; }
 
 .btn-primary {
+  box-shadow: 1px 1px 3px #6983A0;
   background: #4EF0E1;
-  color: #496F9A; }
+  color: #496F9A;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn-active {
+  box-shadow: 1px 1px 3px #6983A0;
   background: #4EA9F0;
-  color: #496F9A; }
+  color: #496F9A;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn-secondary {
+  box-shadow: 1px 1px 3px #6983A0;
   background: #C9EDF7;
-  color: #4EA9F0; }
+  color: #4EA9F0;
+  width: auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn-xs-w {
   width: 48px; }

@@ -3,15 +3,14 @@
 // }
 
 [class^="btn"] {
-  @extend %buttonDefault;
-  cursor: pointer;
-  -webkit-transition: background .5s;
+  @include buttonStyle($boxShadow: 1px 1px 3px $color-defaultBtn-shadow, $background: $color-defaultBtn-background, $color: $color-defaultBtn-fontColor);
   transition: background .5s;
 }
 
 // Default Hover State
 [class^="btn"]:hover {
   background: $color-btnHover-background;
+  cursor: pointer;
 }
 [class^="btn"]:focus {
   background: $color-btnHover-background;
@@ -20,16 +19,13 @@
 // Button states
 
 .btn-primary {
-  background: $color-primaryBtn-background;
-  color: $color-primaryBtn-color;
+  @include buttonStyle($boxShadow: 1px 1px 3px $color-defaultBtn-shadow, $background: $color-primaryBtn-background, $color: $color-primaryBtn-fontColor)
 }
 .btn-active {
-  background: $color-active-background;
-  color: $color-primaryBtn-color;
+  @include buttonStyle($boxShadow: 1px 1px 3px $color-defaultBtn-shadow, $background: $color-active-background, $color: $color-primaryBtn-fontColor)
 }
 .btn-secondary {
-  background: $color-secondaryBtn-background;
-  color: $color-secondaryBtn-fontColor;
+  @include buttonStyle($boxShadow: 1px 1px 3px $color-defaultBtn-shadow, $background: $color-secondaryBtn-background, $color: $color-secondaryBtn-fontColor)
 }
 
 

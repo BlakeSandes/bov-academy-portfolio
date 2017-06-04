@@ -107,7 +107,7 @@
         z-index: 3;
         .groupList__link {
           background: $color-mainHeading-background;
-          color: $color-primaryBtn-color;
+          color: $color-primaryBtn-fontColor;
           &:hover {
             background: $color-btnHover-background;
           }
@@ -124,7 +124,7 @@
             }
           }
         }
-      }
+      }                                                       
       @media screen and (min-width: 900px) {
         display: none;
         .pivot__groupList {
