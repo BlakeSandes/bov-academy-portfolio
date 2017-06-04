@@ -511,6 +511,7 @@ p, a, li, blockquote {
   .space-lg-11 {
     margin-left: 93.5%; }
 
+<<<<<<< HEAD
 =======
 
   .space-lg-1 {
@@ -548,6 +549,9 @@ p, a, li, blockquote {
 
 >>>>>>> master
   [class*="pillar-lg"].space-lg-none {
+=======
+  .space-lg-none {
+>>>>>>> master
     margin-left: auto; } }
 .main__header {
   background: #51C1D9;
