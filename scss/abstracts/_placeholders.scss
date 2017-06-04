@@ -7,7 +7,6 @@
   box-shadow: 1px 1px 3px $color-defaultBtn-shadow;
   background: $color-defaultBtn-background;
   color: $color-defaultBtn-fontColor;
-  // @include border-radius(3px);
 }
 
 %flexDefaultState {
@@ -61,7 +60,6 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-
     left: 0;
     fill: lighten($color-mainHeading-background, 5%);
   }
